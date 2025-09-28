@@ -1,5 +1,5 @@
 ---
-title: "She's An Asset-Hard Target Fundamentals: Awareness, Resiliency & Firearms"
+title: a
 description: For women seeking a welcoming and supportive space to learn about
   firearms, self-protection, and resiliency with confidence.
 date: 2024-09-28T09:00:00.000Z
@@ -18,7 +18,7 @@ For women seeking a welcoming and supportive space to learn about firearms, self
 
 ## Event Details
 
-* **Date:** Sunday, 
+* **Date:** Sunday, September 28
 * **Time:** 9:00 AM – 4:00 PM EDT
 * **Location:** Scarborough Fish & Game Association — 21 Fish and Game Lane, Scarborough, ME 04074
 * **Duration:** 7 hours • Doors at 8:45 AM
