@@ -1,5 +1,5 @@
 ---
-title: "She's An Asset - Leadership & Empowerment "
+title: She's An Asset - Leadership & Empowerment Training
 description: Empowering women to lead with confidence, boundaries, and real
   strength. Women's safety workshops, corporate training, and leadership
   development.
