@@ -1,7 +1,6 @@
 ---
 title: "She's An Asset-Hard Target Fundamentals: Awareness, Resiliency & Firearms"
-description: For women seeking a welcoming and supportive space to learn about
-  firearms, self-protection, and resiliency with confidence.
+description: "For "
 date: 2024-09-28T09:00:00.000Z
 location: Scarborough Fish & Game Association — 21 Fish and Game Lane,
   Scarborough, ME 04074
