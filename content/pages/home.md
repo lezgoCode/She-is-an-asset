@@ -5,7 +5,7 @@ description: Empowering women to lead with confidence, boundaries, and real
   development.
 keywords: women's empowerment, leadership training, safety workshops, corporate
   training, Autumn coaching
-hero_headline: You don't need to feel scared. You need to feel ready.
+hero_headline: aa
 hero_subhead: She's An Asset helps women build real-world safety skills and
   body-based confidence—so you move through the world with presence, power, and
   peace of mind.
