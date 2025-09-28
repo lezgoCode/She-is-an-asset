@@ -18,7 +18,7 @@ For women seeking a welcoming and supportive space to learn about firearms, self
 
 ## Event Details
 
-* **Date:** 
+* **Date:** Sunday, September 28
 * **Time:** 9:00 AM – 4:00 PM EDT
 * **Location:** Scarborough Fish & Game Association — 21 Fish and Game Lane, Scarborough, ME 04074
 * **Duration:** 7 hours • Doors at 8:45 AM
