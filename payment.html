@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#A3194A">
+    <title>Payment - She's An Asset</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar non-home-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">She's An Asset</a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Autumn</a></li>
+                    <li><a href="womens-events.html">Women's Events</a></li>
+                    <li><a href="safety.html">Home & Business Safety</a></li>
+                    <li><a href="corporate.html">Corporate Training</a></li>
+                    <li><a href="podcast.html">The Podcast</a></li>
+                    <li><a href="speaking.html">Book Autumn to Speak</a></li>
+                    <li><a href="private.html">Work Privately</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-cta">
+                    <a href="womens-events.html" class="btn btn-cta">Book Workshop</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-content">
+                <h1>Complete Your Purchase</h1>
+                <div class="payment-details">
+                    <div class="product-info">
+                        <h2 id="product-name">Hard Target Society Membership</h2>
+                        <p id="product-description">Monthly membership with live training, coaching, and community support</p>
+                        <div class="price-info">
+                            <span class="price" id="product-price">$19.00</span>
+                            <span class="period" id="product-period">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form">
+                        <div id="stripe-payment-element">
+                            <!-- Stripe Elements will be inserted here -->
+                        </div>
+                        
+                        <div class="payment-actions">
+                            <button id="submit-payment" class="btn btn-primary btn-large">
+                                <span id="button-text">Pay Now</span>
+                                <div id="spinner" class="spinner hidden"></div>
+                            </button>
+                            <p class="payment-note">Secure payment powered by Stripe</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-features">
+                    <div class="feature">
+                        <span class="feature-icon">🔒</span>
+                        <span>Secure & Encrypted</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💳</span>
+                        <span>All Major Cards Accepted</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">↩️</span>
+                        <span>Cancel Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>She's An Asset</h3>
+                    <p>Empowering women to lead with confidence, boundaries, and real strength.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/shesanasset" class="social-link">Instagram</a>
+                        <a href="https://linkedin.com/in/autumn-shesanasset" class="social-link">LinkedIn</a>
+                        <a href="https://youtube.com/@shesanasset" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:support@shesanasset.com">support@shesanasset.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 She's An Asset. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get URL parameters to determine product
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product') || 'hard-target-monthly';
+        const price = urlParams.get('price') || '19.00';
+        const period = urlParams.get('period') || 'month';
+        
+        // Update product information based on URL parameters
+        document.getElementById('product-price').textContent = `$${price}`;
+        document.getElementById('product-period').textContent = `/${period}`;
+        
+        // Product configurations with Stripe Price IDs
+        const products = {
+            'hard-target-monthly': {
+                name: 'Hard Target Society Membership',
+                description: 'Monthly membership with live training, coaching, and community support',
+                price: '19.00',
+                period: 'month',
+                stripePriceId: 'price_1234567890' // Replace with your actual Stripe Price ID
+            },
+            'hard-target-6month': {
+                name: 'Hard Target Society - 6 Month Plan',
+                description: '6-month membership with live training, coaching, and community support (Save $19)',
+                price: '95.00',
+                period: '6 months',
+                stripePriceId: 'price_1234567891' // Replace with your actual Stripe Price ID
+            },
+            'power-session': {
+                name: '1:1 Power Session',
+                description: '75-minute personalized coaching session with Autumn',
+                price: '297.00',
+                period: 'one-time',
+                stripePriceId: 'price_1234567892' // Replace with your actual Stripe Price ID
+            },
+            'ongoing-coaching': {
+                name: 'Ongoing Coaching',
+                description: 'Biweekly or weekly coaching sessions with Autumn',
+                price: '495.00',
+                period: 'month',
+                stripePriceId: 'price_1234567893' // Replace with your actual Stripe Price ID
+            },
+            'safety-assessment': {
+                name: 'In-Home Safety Assessment',
+                description: 'Full safety walkthrough and risk assessment of your home',
+                price: '475.00',
+                period: 'one-time',
+                stripePriceId: 'price_1234567894' // Replace with your actual Stripe Price ID
+            },
+            'business-assessment': {
+                name: 'Business Safety Assessment',
+                description: 'Comprehensive safety assessment for your business',
+                price: '875.00',
+                period: 'one-time',
+                stripePriceId: 'price_1234567895' // Replace with your actual Stripe Price ID
+            },
+            'womens-event': {
+                name: 'Women\'s Empowerment Workshop',
+                description: 'Immersive experience focused on building unshakable confidence and real-world safety skills',
+                price: '75.00',
+                period: 'one-time',
+                stripePriceId: 'price_1234567896' // Replace with your actual Stripe Price ID
+            }
+        };
+        
+        // Update product info if product is found
+        if (products[product]) {
+            const productInfo = products[product];
+            document.getElementById('product-name').textContent = productInfo.name;
+            document.getElementById('product-description').textContent = productInfo.description;
+            document.getElementById('product-price').textContent = `$${productInfo.price}`;
+            document.getElementById('product-period').textContent = productInfo.period === 'one-time' ? '' : `/${productInfo.period}`;
+        }
+        
+        // Initialize Stripe Checkout
+        function initializeStripeCheckout() {
+            const stripe = Stripe('pk_test_your_publishable_key_here'); // Replace with your actual publishable key
+            
+            const productInfo = products[product];
+            if (!productInfo) {
+                document.getElementById('stripe-payment-element').innerHTML = 
+                    '<p style="color: #A3194A; text-align: center; padding: 20px;">Product not found. Please contact support@shesanasset.com</p>';
+                return;
+            }
+            
+            // Create checkout session
+            const checkoutButton = document.getElementById('submit-payment');
+            checkoutButton.addEventListener('click', async () => {
+                try {
+                    // In a real implementation, you would call your backend to create a checkout session
+                    // For now, we'll redirect to a simple payment form
+                    const checkoutUrl = `https://checkout.stripe.com/pay/${productInfo.stripePriceId}`;
+                    window.location.href = checkoutUrl;
+                } catch (error) {
+                    console.error('Error creating checkout session:', error);
+                    alert('Payment system is being set up. Please contact support@shesanasset.com to complete your purchase.');
+                }
+            });
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeStripeCheckout);
+    </script>
+    
+    <style>
+        .payment-section {
+            padding: 80px 0;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .payment-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .payment-content h1 {
+            text-align: center;
+            color: var(--deep-pine);
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .product-info {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .product-info h2 {
+            color: var(--deep-pine);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .product-info p {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+        
+        .price-info {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-pink);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .period {
+            font-size: 1.2rem;
+            color: var(--charcoal);
+        }
+        
+        .payment-form {
+            margin-bottom: 30px;
+        }
+        
+        #stripe-payment-element {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        .payment-actions {
+            text-align: center;
+        }
+        
+        .payment-note {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+        }
+        
+        .payment-features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--charcoal);
+        }
+        
+        .feature-icon {
+            font-size: 1.2rem;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #A3194A;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .payment-content {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            .payment-features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
+    <script src="script.js"></script>
+</body>
+</html>

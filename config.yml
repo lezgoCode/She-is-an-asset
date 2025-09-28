@@ -1,0 +1,136 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Media storage (optional)
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+# Site URL (optional, defaults to the URL of the site)
+site_url: https://shesanasset.com
+
+# Display URL (optional, defaults to the URL of the site)
+display_url: https://shesanasset.com
+
+# Logo URL (optional, defaults to the logo in the site)
+logo_url: https://shesanasset.com/favicon.png
+
+# A list of collection objects
+collections:
+  # Pages collection
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Keywords", name: "keywords", widget: "string"}
+      - {label: "Hero Headline", name: "hero_headline", widget: "string"}
+      - {label: "Hero Subhead", name: "hero_subhead", widget: "text"}
+      - {label: "Hero Video", name: "hero_video", widget: "file", required: false}
+      - {label: "Hero Image", name: "hero_image", widget: "image", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  # Events collection
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Event Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Eventbrite Link", name: "eventbrite_link", widget: "string", required: false}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  # Blog posts collection
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Author", name: "author", widget: "string", default: "Autumn Schmidt"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  # Testimonials collection
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Company", name: "company", widget: "string", required: false}
+      - {label: "Quote", name: "quote", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  # Client logos collection
+  - name: "clients"
+    label: "Client Logos"
+    folder: "content/clients"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Company Name", name: "name", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Website", name: "website", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  # Speaking topics collection
+  - name: "speaking_topics"
+    label: "Speaking Topics"
+    folder: "content/speaking-topics"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Audience", name: "audience", widget: "string"}
+      - {label: "Key Takeaways", name: "takeaways", widget: "list", field: {label: "Takeaway", name: "takeaway", widget: "string"}}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  # Site settings collection
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/settings/site.yml"
+        label: "Site Settings"
+        name: "site"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Site Description", name: "description", widget: "text"}
+          - {label: "Contact Email", name: "contact_email", widget: "string"}
+          - {label: "Social Links", name: "social", widget: "object", fields: [
+              {label: "Instagram", name: "instagram", widget: "string", required: false},
+              {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
+              {label: "YouTube", name: "youtube", widget: "string", required: false},
+              {label: "Twitter", name: "twitter", widget: "string", required: false}
+            ]}
+          - {label: "Footer Text", name: "footer_text", widget: "text"}
+
