@@ -1,4 +1,4 @@
-// CMS Content Loader for She's An Asset Website
+// Working CMS Loader for She's An Asset Website
 class CMSLoader {
     constructor() {
         this.contentCache = new Map();
@@ -21,14 +21,18 @@ class CMSLoader {
                 url = `${this.basePath}/${type}.md`;
             }
 
+            console.log('Loading content from:', url);
             const response = await fetch(url);
+            
             if (!response.ok) {
-                throw new Error(`Failed to load content: ${response.status}`);
+                console.error(`Failed to load content: ${response.status}`);
+                return null;
             }
 
             const text = await response.text();
             const content = this.parseMarkdown(text);
             
+            console.log('Parsed content:', content);
             this.contentCache.set(cacheKey, content);
             return content;
         } catch (error) {
@@ -83,28 +87,52 @@ class CMSLoader {
     }
 
     // Update page content dynamically
-updatePageContent(content) {
-    if (!content) return;
+    updatePageContent(content) {
+        if (!content) {
+            console.log('No content to update');
+            return;
+        }
 
-    console.log('Updating content:', content);
+        console.log('Updating page content:', content);
 
-    // Update hero content
-    if (content.hero_headline) {
-        const headlineEl = document.querySelector('.hero-headline');
-        if (headlineEl) {
-            headlineEl.textContent = content.hero_headline;
-            console.log('Updated headline:', content.hero_headline);
+        // Update meta tags
+        if (content.title) {
+            document.title = content.title;
+            this.updateMetaTag('og:title', content.title);
+            this.updateMetaTag('twitter:title', content.title);
+        }
+
+        if (content.description) {
+            this.updateMetaTag('description', content.description);
+            this.updateMetaTag('og:description', content.description);
+            this.updateMetaTag('twitter:description', content.description);
+        }
+
+        if (content.keywords) {
+            this.updateMetaTag('keywords', content.keywords);
+        }
+
+        // Update hero content
+        if (content.hero_headline) {
+            const headlineEl = document.querySelector('.hero-headline');
+            if (headlineEl) {
+                headlineEl.textContent = content.hero_headline;
+                console.log('Updated headline:', content.hero_headline);
+            } else {
+                console.log('Headline element not found');
+            }
+        }
+
+        if (content.hero_subhead) {
+            const subheadEl = document.querySelector('.hero-subhead');
+            if (subheadEl) {
+                subheadEl.textContent = content.hero_subhead;
+                console.log('Updated subhead:', content.hero_subhead);
+            } else {
+                console.log('Subhead element not found');
+            }
         }
     }
-
-    if (content.hero_subhead) {
-        const subheadEl = document.querySelector('.hero-subhead');
-        if (subheadEl) {
-            subheadEl.textContent = content.hero_subhead;
-            console.log('Updated subhead:', content.hero_subhead);
-        }
-    }
-}
 
     updateMetaTag(name, content) {
         let meta = document.querySelector(`meta[name="${name}"]`) || 
@@ -129,9 +157,13 @@ const cmsLoader = new CMSLoader();
 
 // Auto-load content for current page
 document.addEventListener('DOMContentLoaded', async () => {
+    console.log('DOM loaded, starting CMS loader');
+    
     const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+    console.log('Current page:', currentPage);
     
     if (currentPage === 'index' || currentPage === '') {
+        console.log('Loading home page content');
         const homeContent = await cmsLoader.loadContent('pages', 'home');
         cmsLoader.updatePageContent(homeContent);
     }
