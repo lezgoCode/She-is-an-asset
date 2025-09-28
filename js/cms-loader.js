@@ -83,37 +83,28 @@ class CMSLoader {
     }
 
     // Update page content dynamically
-    updatePageContent(content) {
-        if (!content) return;
+updatePageContent(content) {
+    if (!content) return;
 
-        // Update meta tags
-        if (content.title) {
-            document.title = content.title;
-            this.updateMetaTag('og:title', content.title);
-            this.updateMetaTag('twitter:title', content.title);
-        }
+    console.log('Updating content:', content);
 
-        if (content.description) {
-            this.updateMetaTag('description', content.description);
-            this.updateMetaTag('og:description', content.description);
-            this.updateMetaTag('twitter:description', content.description);
-        }
-
-        if (content.keywords) {
-            this.updateMetaTag('keywords', content.keywords);
-        }
-
-        // Update hero content
-        if (content.hero_headline) {
-            const headlineEl = document.querySelector('.hero-headline');
-            if (headlineEl) headlineEl.textContent = content.hero_headline;
-        }
-
-        if (content.hero_subhead) {
-            const subheadEl = document.querySelector('.hero-subhead');
-            if (subheadEl) subheadEl.textContent = content.hero_subhead;
+    // Update hero content
+    if (content.hero_headline) {
+        const headlineEl = document.querySelector('.hero-headline');
+        if (headlineEl) {
+            headlineEl.textContent = content.hero_headline;
+            console.log('Updated headline:', content.hero_headline);
         }
     }
+
+    if (content.hero_subhead) {
+        const subheadEl = document.querySelector('.hero-subhead');
+        if (subheadEl) {
+            subheadEl.textContent = content.hero_subhead;
+            console.log('Updated subhead:', content.hero_subhead);
+        }
+    }
+}
 
     updateMetaTag(name, content) {
         let meta = document.querySelector(`meta[name="${name}"]`) || 
