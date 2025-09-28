@@ -7,10 +7,10 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 # Site URL (optional, defaults to the URL of the site)
-site_url: https://shesanasset.com
+site_url: https://dainty-buttercream-25bae8.netlify.app/
 
 # Display URL (optional, defaults to the URL of the site)
-display_url: https://shesanasset.com
+display_url: https://dainty-buttercream-25bae8.netlify.app/
 
 # Logo URL (optional, defaults to the logo in the site)
 logo_url: https://shesanasset.com/favicon.png
@@ -133,4 +133,5 @@ collections:
               {label: "Twitter", name: "twitter", widget: "string", required: false}
             ]}
           - {label: "Footer Text", name: "footer_text", widget: "text"}
+
 
