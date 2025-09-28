@@ -14,7 +14,7 @@ published: true
 ---
 # She's An Asset-Hard Target Fundamentals
 
-
+For women seeking a welcoming and supportive space to learn about firearms, self-protection, and resiliency with confidence.
 
 ## Event Details
 
