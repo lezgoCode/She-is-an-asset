@@ -2,7 +2,7 @@
 class CMSLoader {
     constructor() {
         this.contentCache = new Map();
-        this.basePath = 'https://dainty-buttercream-25bae8.netlify.app/content';
+        this.basePath = 'https://ubiquitous-gumption-f7490d.netlify.app/content';
     }
 
     // Load content from markdown files
