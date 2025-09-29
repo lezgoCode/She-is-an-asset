@@ -4377,3 +4377,21 @@ blockquote cite {
         color: #666;
     }
 }
+/* Allow full hero subhead text to show */
+.hero-subhead {
+  overflow: visible !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+  max-height: none !important;
+}
+
+/* In case the container is clipping */
+.hero .hero-content,
+.hero .hero-content .container {
+  overflow: visible !important;
+  max-height: none !important;
+}
