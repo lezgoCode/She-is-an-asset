@@ -1,173 +1,155 @@
-// Working CMS Loader for She's An Asset Website
+// CMS Content Loader for She's An Asset Website
 class CMSLoader {
-    constructor() {
-        this.contentCache = new Map();
-        this.basePath = 'https://ubiquitous-gumption-f7490d.netlify.app/content';
+    constructor(basePath) {
+        this.basePath = basePath || '/content';
+        this.cache = new Map();
     }
 
-    // Load content from markdown files
-    async loadContent(type, slug = null) {
-        const cacheKey = `${type}${slug ? `-${slug}` : ''}`;
-        
-        if (this.contentCache.has(cacheKey)) {
-            return this.contentCache.get(cacheKey);
-        }
+    async loadContent(collection, slug) {
+        const cacheKey = `${collection}:${slug || '__single__'}`;
+        if (this.cache.has(cacheKey)) return this.cache.get(cacheKey);
+
+        const url = slug
+            ? `${this.basePath}/${collection}/${slug}.md`
+            : `${this.basePath}/${collection}.md`;
 
         try {
-            let url;
-            if (slug) {
-                url = `${this.basePath}/${type}/${slug}.md`;
-            } else {
-                url = `${this.basePath}/${type}.md`;
-            }
-
-            console.log('Loading content from:', url);
-            const response = await fetch(url);
-            
-            if (!response.ok) {
-                console.error(`Failed to load content: ${response.status}`);
-                return null;
-            }
-
-            const text = await response.text();
-            const content = this.parseMarkdown(text);
-            
-            console.log('Parsed content:', content);
-            this.contentCache.set(cacheKey, content);
-            return content;
-        } catch (error) {
-            console.error(`Error loading ${type} content:`, error);
+            const res = await fetch(url, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
+            const raw = await res.text();
+            const parsed = this.parseFrontmatter(raw);
+            this.cache.set(cacheKey, parsed);
+            return parsed;
+        } catch (err) {
+            console.error('[CMSLoader] loadContent error:', err);
             return null;
         }
     }
 
-    // Parse markdown with frontmatter
-    parseMarkdown(text) {
-        const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
-        const match = text.match(frontmatterRegex);
-        
-        if (match) {
-            const frontmatter = this.parseYAML(match[1]);
-            const content = match[2];
-            return { ...frontmatter, content };
-        }
-        
-        return { content: text };
+    parseFrontmatter(text) {
+        const fm = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+        const match = text.match(fm);
+        if (!match) return { data: {}, body: text };
+        const yaml = match[1];
+        const body = match[2];
+        return { data: this.parseYAML(yaml), body };
     }
 
-    // Simple YAML parser for frontmatter
     parseYAML(yaml) {
-        const result = {};
+        // Minimal YAML key: value parser sufficient for frontmatter
+        const obj = {};
         const lines = yaml.split('\n');
-        
         for (const line of lines) {
             const trimmed = line.trim();
-            if (trimmed && !trimmed.startsWith('#')) {
-                const colonIndex = trimmed.indexOf(':');
-                if (colonIndex > 0) {
-                    const key = trimmed.substring(0, colonIndex).trim();
-                    let value = trimmed.substring(colonIndex + 1).trim();
-                    
-                    // Remove quotes if present
-                    if ((value.startsWith('"') && value.endsWith('"')) || 
-                        (value.startsWith("'") && value.endsWith("'"))) {
-                        value = value.slice(1, -1);
-                    }
-                    
-                    // Parse boolean values
-                    if (value === 'true') value = true;
-                    if (value === 'false') value = false;
-                    
-                    result[key] = value;
-                }
+            if (!trimmed || trimmed.startsWith('#')) continue;
+            const idx = trimmed.indexOf(':');
+            if (idx === -1) continue;
+            const key = trimmed.slice(0, idx).trim();
+            let value = trimmed.slice(idx + 1).trim();
+            if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+                value = value.slice(1, -1);
             }
+            if (value === 'true') value = true;
+            else if (value === 'false') value = false;
+            obj[key] = value;
         }
-        
-        return result;
+        return obj;
     }
 
-    // Update page content dynamically
-    updatePageContent(content) {
-        if (!content) {
-            console.log('No content to update');
-            return;
-        }
-
-        console.log('Updating page content:', content);
-
-        // Update meta tags
-        if (content.title) {
-            document.title = content.title;
-            this.updateMetaTag('og:title', content.title);
-            this.updateMetaTag('twitter:title', content.title);
-        }
-
-        if (content.description) {
-            this.updateMetaTag('description', content.description);
-            this.updateMetaTag('og:description', content.description);
-            this.updateMetaTag('twitter:description', content.description);
-        }
-
-        if (content.keywords) {
-            this.updateMetaTag('keywords', content.keywords);
-        }
-
-        // Update hero content
-        if (content.hero_headline) {
-            const headlineEl = document.querySelector('.hero-headline');
-            if (headlineEl) {
-                headlineEl.textContent = content.hero_headline;
-                console.log('Updated headline:', content.hero_headline);
-            } else {
-                console.log('Headline element not found');
+    updateMeta(data) {
+        if (!data) return;
+        const setMeta = (name, content) => {
+            if (!content) return;
+            let el = document.querySelector(`meta[name="${name}"]`) || document.querySelector(`meta[property="${name}"]`);
+            if (!el) {
+                el = document.createElement('meta');
+                if (name.startsWith('og:') || name.startsWith('twitter:')) el.setAttribute('property', name);
+                else el.setAttribute('name', name);
+                document.head.appendChild(el);
             }
+            el.setAttribute('content', content);
+        };
+        if (data.title) {
+            document.title = data.title;
+            setMeta('og:title', data.title);
+            setMeta('twitter:title', data.title);
         }
+        if (data.description) {
+            setMeta('description', data.description);
+            setMeta('og:description', data.description);
+            setMeta('twitter:description', data.description);
+        }
+        if (data.keywords) setMeta('keywords', data.keywords);
+    }
 
-        if (content.hero_subhead) {
-            const subheadEl = document.querySelector('.hero-subhead');
-            if (subheadEl) {
-                subheadEl.textContent = content.hero_subhead;
-                console.log('Updated subhead:', content.hero_subhead);
-            } else {
-                console.log('Subhead element not found');
-            }
+    hydrateHome(page) {
+        if (!page) return;
+        const { data } = page;
+        if (data.hero_headline) {
+            const h = document.querySelector('.hero-headline');
+            if (h) h.textContent = data.hero_headline;
+        }
+        if (data.hero_subhead) {
+            const s = document.querySelector('.hero-subhead');
+            if (s) s.textContent = data.hero_subhead;
+        }
+        this.updateMeta(data);
+    }
+
+    hydrateHomepageEvent(event) {
+        if (!event) return;
+        const { data } = event;
+        const titleEl = document.querySelector('.event-details h3');
+        if (titleEl && data.title) titleEl.textContent = data.title;
+
+        const dateEl = document.querySelector('.event-date');
+        if (dateEl && data.date) dateEl.textContent = this.formatEventDate(data.date);
+
+        const locEl = document.querySelector('.event-location');
+        if (locEl && data.location) locEl.textContent = data.location;
+
+        const descEl = document.querySelector('.event-description');
+        if (descEl && (data.description || event.body)) descEl.textContent = data.description || event.body;
+
+        const imgEl = document.querySelector('.event-image img');
+        if (imgEl && data.image) imgEl.setAttribute('src', data.image);
+
+        const cta = document.querySelector('.event-details a.btn.btn-primary');
+        if (cta && data.eventbrite_link) {
+            cta.setAttribute('href', data.eventbrite_link);
+            cta.setAttribute('target', '_blank');
+            cta.setAttribute('rel', 'noopener');
         }
     }
 
-    updateMetaTag(name, content) {
-        let meta = document.querySelector(`meta[name="${name}"]`) || 
-                  document.querySelector(`meta[property="${name}"]`);
-        
-        if (!meta) {
-            meta = document.createElement('meta');
-            if (name.startsWith('og:') || name.startsWith('twitter:')) {
-                meta.setAttribute('property', name);
-            } else {
-                meta.setAttribute('name', name);
-            }
-            document.head.appendChild(meta);
-        }
-        
-        meta.setAttribute('content', content);
+    formatEventDate(iso) {
+        // Keep original string if not ISO
+        try {
+            const d = new Date(iso);
+            if (isNaN(d.getTime())) return iso;
+            const formatter = new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+            return `${formatter.format(d)} · 9:00 AM – 4:00 PM EDT`;
+        } catch (_) { return iso; }
     }
 }
 
-// Initialize CMS Loader
-const cmsLoader = new CMSLoader();
+(function init() {
+    document.addEventListener('DOMContentLoaded', async () => {
+        const loader = new CMSLoader('/content');
+        const path = (window.location.pathname || '').replace(/\/+/g, '/');
+        const page = path.split('/').pop().replace('.html', '') || 'index';
 
-// Auto-load content for current page
-document.addEventListener('DOMContentLoaded', async () => {
-    console.log('DOM loaded, starting CMS loader');
-    
-    const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
-    console.log('Current page:', currentPage);
-    
-    if (currentPage === 'index' || currentPage === '') {
-        console.log('Loading home page content');
-        const homeContent = await cmsLoader.loadContent('pages', 'home');
-        cmsLoader.updatePageContent(homeContent);
-    }
-});
+        if (page === 'index') {
+            const home = await loader.loadContent('pages', 'home');
+            loader.hydrateHome(home);
+            const event = await loader.loadContent('events', 'hard-target-fundamentals');
+            loader.hydrateHomepageEvent(event);
+        }
+    });
+})();
+
+// Expose for debugging
+window.CMSLoader = CMSLoader;
 
 // Export for use in other scripts
 window.CMSLoader = CMSLoader;
