@@ -1,5 +1,5 @@
 ---
-title: "She's An Asset-Hard Target Fundamentals: Awareness, Resiliency & Firearms"
+title: "She's An Asset-Hard "
 description: For women seeking a welcoming and supportive space to learn about
   firearms, self-protection, and resiliency with confidence.
 date: 2025-10-09T09:00:00.000Z
@@ -8,7 +8,7 @@ location: Scarborough Fish & Game Association — 21 Fish and Game Lane,
 duration: 7 hours • Doors at 8:45 AM
 price: Check Eventbrite for pricing
 eventbrite_link: https://www.eventbrite.com/e/shes-an-asset-hard-target-fundamentals-awareness-resiliency-firearms-tickets-1584233808969?aff=oddtdtcreator
-image: /images/uploads/c.png
+image: /images/uploads/class.png
 featured: true
 published: true
 ---
