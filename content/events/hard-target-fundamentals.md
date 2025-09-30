@@ -1,5 +1,5 @@
 ---
-title: "She's An Asset-Hard "
+title: "She's An Asset-Hard Target Fundamentals: Awareness, Resiliency & Firearms"
 description: For women seeking a welcoming and supportive space to learn about
   firearms, self-protection, and resiliency with confidence.
 date: 2025-10-09T09:00:00.000Z
