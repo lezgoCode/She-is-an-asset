@@ -144,12 +144,41 @@ class CMSLoader {
             loader.hydrateHome(home);
             const event = await loader.loadContent('events', 'hard-target-fundamentals');
             loader.hydrateHomepageEvent(event);
+        } else if (page === 'about') {
+            const about = await loader.loadContent('pages', 'about');
+            if (about) {
+                const h1 = document.querySelector('.page-header h1');
+                if (h1 && about.data.title) h1.textContent = about.data.title;
+                const hh = document.querySelector('.hero-headline');
+                if (hh && about.data.hero_headline) hh.textContent = about.data.hero_headline;
+                const hs = document.querySelector('.hero-subhead');
+                if (hs && about.data.hero_subhead) hs.textContent = about.data.hero_subhead;
+                const bio = document.querySelector('.autumn-bio');
+                if (bio && about.body) bio.innerHTML = CMSLoader.prototype.markdownToHTML(about.body);
+                loader.updateMeta(about.data);
+            }
+        } else if (page === 'speaking') {
+            const speaking = await loader.loadContent('pages', 'speaking');
+            if (speaking) {
+                const hh2 = document.querySelector('.hero-headline');
+                if (hh2 && speaking.data.hero_headline) hh2.textContent = speaking.data.hero_headline;
+                const hs2 = document.querySelector('.hero-subhead');
+                if (hs2 && speaking.data.hero_subhead) hs2.textContent = speaking.data.hero_subhead;
+                if (speaking.data.title) document.title = speaking.data.title;
+                loader.updateMeta(speaking.data);
+            }
         }
     });
 })();
 
 // Expose for debugging
 window.CMSLoader = CMSLoader;
+// Lightweight markdown to HTML (very basic paragraphs/line breaks)
+CMSLoader.prototype.markdownToHTML = function(md) {
+    if (!md) return '';
+    const blocks = md.trim().split(/\n\s*\n/);
+    return blocks.map(b => `<p>${b.replace(/\n/g, '<br>')}</p>`).join('');
+};
 
 // Export for use in other scripts
 window.CMSLoader = CMSLoader;
