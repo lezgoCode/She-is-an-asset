@@ -1,11 +1,14 @@
 ---
-title: "About Autumn - She's An Asset"
-description: "Meet Autumn Schmidt, former police officer turned trauma-informed empowerment trainer, personal safety coach, and speaker."
-keywords: "About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership coach, safety expert"
-hero_headline: "About Autumn"
-hero_subhead: "Former cop. Trauma survivor. Leadership coach."
+keywords: About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership
+  coach, safety expert
 featured: false
 published: true
+title: "About Autumn - "
+description: Meet Autumn Schmidt, former police officer turned trauma-informed
+  empowerment trainer, personal safety coach, and speaker.
+hero_headline: About Autumn
+hero_subhead: Former cop. Trauma survivor. Leadership coach.
+date: 2025-10-04T10:42:23.238Z
 ---
 
 # Meet Autumn
