@@ -1,23 +1,22 @@
 ---
 keywords: About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership
-  coach, safety expert
+  coach, safety expert, self-trust
 featured: false
 published: true
 title: "About Autumn - "
-description: Meet Autumn Schmidt, former police officer turned trauma-informed
-  empowerment trainer, personal safety coach, and speaker.
+description: Meet Autumn Schmidt | Founder of She's An Asset™ | Creator of The
+  Hard Target Method™ | Former cop turned self-trust strategist.
 hero_headline: About Autumn
-hero_subhead: Former cop. Trauma survivor. Leadership coach.
-hero_video: /images/uploads/update-1.mp4
+hero_subhead: Former cop. Trauma survivor. Self-Trust strategist.
+hero_video: /images/uploads/a94887a1-44c7-4bb2-a3c6-2a5a48da3128.jpeg
 date: 2025-10-04T10:42:23.238Z
 ---
-
 # Meet Autumn
 
 Most people teach confidence from the neck up.
 I teach it from the ground up — body, voice, presence, and mindset.
 
-I'm Autumn Schmidt — a former police officer turned trauma-informed empowerment trainer, personal safety coach, and speaker. I help women and high-stakes teams build confidence, calm, and leadership that actually shows up in the real world.
+I'm Autumn Schmidt — a former police officer turned trauma-informed empowerment teacher, personal safety coach, and speaker. I help women and high-stakes teams build confidence, calm, and leadership that actually shows up in the real world.
 
 ## My Story
 
