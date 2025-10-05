@@ -1,114 +1,99 @@
 ---
-keywords: home safety, business safety, de-escalation training, personal
-  protection, workplace security, safety training
+title: "Home & Business Safety - She's An Asset"
+description: "Safety assessments and training for homes and businesses. Get personalized safety plans and hands-on training with Autumn."
+keywords: "home safety, business safety, safety assessment, personal safety training, workplace safety"
+hero_headline: "Safety Starts at Home. And Work."
+hero_subhead: "Whether you're a business owner, parent, or someone who just wants to feel more prepared, these private sessions are your blueprint for safety, awareness, and resilience—right where you live or lead."
 featured: false
 published: true
-title: Home & Business Safety - She's An Asset
-description: Comprehensive safety training for homes, businesses, and high-risk
-  environments. From de-escalation to personal protection strategies.
-hero_headline: Safety Training That Works in Real Life
-hero_subhead: From hair salons to health clinics, real estate teams to
-  leadership orgs—everyone deserves a plan. Build confidence and create safer
-  spaces.
-hero_video: /images/uploads/update-1.mp4
-date: 2025-10-05T11:28:20.465Z
 ---
 
-# Home & Business Safety Training
+# Safety Starts at Home. And Work.
 
-## Safety Training That Goes Beyond Policies
+> You can't always prevent chaos.  
+> But you can be ready for it.
 
-Everyone deserves to feel safe at work, at home, and in their community. Our safety trainings teach practical skills that work in real-world situations, not just theoretical concepts.
+These 1:1 safety assessments help you understand your space—home or workplace—from a predator's perspective. Together, we build an action plan to make you, your loved ones, and your team harder targets.
 
-## Our Safety Programs
+Beyond a generic slate of google‑able guidance, you receive a tactical, judgment‑free walkthrough with real recommendations—plus the option to receive personalized, hands‑on training for what to do if the worst happens.
 
-### Workplace De-escalation & Conflict Resolution
-Teach your team to recognize escalating situations, communicate effectively under pressure, and diffuse conflict before it becomes dangerous.
+## Quick Navigation
 
-**Who This Is For:**
-- Healthcare professionals and caregivers
-- Retail and hospitality teams
-- Educational staff and administrators
-- Customer service representatives
-- Anyone dealing with challenging interactions
+- [In‑Home Safety](#for-individuals--families)
+- [Business Safety](#for-businesses--teams)
 
-### Personal Protection Fundamentals
-Build confidence and practical skills for personal safety. Learn situational awareness, boundary-setting, and self-protection techniques that work for all body types and abilities.
+## For Individuals & Families
 
-**Who This Is For:**
-- People working alone or in isolated environments
-- Real estate professionals
-- Delivery and service workers
-- Anyone who wants to feel more confident and prepared
+### In‑Home Safety Assessment
+For solo women, roommates, parents, or anyone who wants peace of mind.
 
-### Home & Family Safety Planning
-Create a comprehensive safety plan for your home and family. From securing your space to emergency protocols and family communication strategies.
+**Includes:**
 
-**Who This Is For:**
-- Families with children
-- People living alone
-- Home-based business owners
-- Anyone wanting peace of mind at home
+- Full safety walkthrough of your home  
+- Risk assessment: points of entry, escape, visibility  
+- Emergency action plan  
+- Situational awareness coaching  
+- Follow‑up with clear written recommendations
 
-### Business Environment Assessment & Security
-Evaluate your business environment, identify vulnerabilities, and implement practical security measures that don't compromise accessibility or customer experience.
+**Investment:** $475
 
-**Who This Is For:**
-- Small business owners
-- Property managers
-- Healthcare facilities
-- Educational institutions
-- Any organization prioritizing safety
+#### Recommended Add‑On
 
-## Training Formats That Work
+**+ Personal Safety Training with Autumn**  
+A 1‑hour custom session for you or your household:
 
-### On-Site Training
-We come to your location with customized scenarios and site-specific recommendations. Training includes your actual environment and real challenges.
+- What to do in case of intruder  
+- Voice and body positioning  
+- Emergency response practice  
+- Boundaries and mindset under pressure
 
-### Small Group Sessions
-Intimate settings with hands-on practice. Ideal for teams who need personalized attention and specific skill development.
+**Add‑On Investment:** $500
 
-### Consultations & Assessments
-Safety audits and recommendations for your home or business. Get expert evaluation and a customized action plan.
+[Book Your In‑Home Assessment](contact.html)
 
-## Why Our Approach Works
+## For Businesses & Teams
 
-- **Former law enforcement experience** brings real-world application
-- **Trauma-informed methods** prioritize psychological safety
-- **Practical skills** your team can use immediately
-- **Inclusive approach** works for all abilities and body types
-- **Site-specific training** tailored to your actual environment
+### In‑Business Safety Assessment
+For salons, spas, medical practices, real estate offices, small businesses, and service providers who work with the public.
 
-## Training Outcomes
+**Includes:**
 
-After working with us, participants report:
-- **Increased confidence** in difficult or threatening situations
-- **Better communication** under pressure and stress
-- **Earlier recognition** of potential safety issues
-- **Practical tools** for conflict resolution and personal protection
-- **Comprehensive plans** for emergency situations
+- On‑site risk assessment  
+- Walkthrough of client interaction points, exits, emergency access  
+- De‑escalation readiness  
+- Team safety planning  
+- Emergency action plan + written summary
 
-## Industries We Serve
+**Investment:** $875
 
-- **Healthcare & Medical Practices**
-- **Education & Childcare**
-- **Real Estate & Property Management**
-- **Retail & Hospitality**
-- **Professional Services**
-- **Home-Based Businesses**
+#### Optional Add‑On
 
-## Custom Training Programs
+**+ Team Training with Autumn**  
+A 1‑hour custom session for your team:
 
-Every organization is different. We customize training programs based on:
-- Your specific industry and challenges
-- Team size and roles
-- Previous safety incidents or concerns
-- Organizational culture and values
-- Budget and time constraints
+- Intruder and incident response  
+- De‑escalation techniques  
+- Situational awareness  
+- Boundaries, body language, and voice control
 
-## Get Started Today
+**Add‑On Investment:** $1000
 
-Ready to make your workplace or home safer? Contact us to discuss your specific needs, challenges, and goals.
+[Book Your Business Assessment](contact.html)
 
-**Email:** support@shesanasset.com
-**Subject:** Safety Training Inquiry
+## Why It Works
+
+> Because when it comes to safety, you don't rise to the occasion.  
+> You fall to your level of preparation.
+
+Let's raise that level—together.
+
+You don't have to live in fear.  
+You just have to stop living unprepared.
+
+---
+
+### Ready to Build Lasting Confidence & Safety Skills?
+
+Join The Hard Target Society — Monthly training, coaching, and community support for women who want more than a one‑time safety class.
+
+[Join Hard Target Society - $19/month](hard-target-society.html)
