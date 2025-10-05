@@ -83,30 +83,31 @@ class CMSLoader {
     }
 
     hydrateHome(page) {
-  if (!page) return;
-  const { data } = page;
-
-  if (data.hero_headline) {
-    const h = document.querySelector('.hero-headline');
-    if (h) h.textContent = data.hero_headline;
-  }
-  if (data.hero_subhead) {
-    const s = document.querySelector('.hero-subhead');
-    if (s) s.textContent = data.hero_subhead;
-  }
-
-  // Hero video from CMS (expects a <video.hero-video><source id="heroVideoSource"></source></video> in index.html)
-  if (data.hero_video) {
-    const srcEl = document.getElementById('heroVideoSource');
-    const videoEl = document.querySelector('.hero-video');
-    if (srcEl && videoEl) {
-      srcEl.src = data.hero_video; // e.g. /images/uploads/hero.mp4 or full URL
-      videoEl.load();
-    }
-  }
-
-  this.updateMeta(data);
-}
+        if (!page) return;
+        const { data } = page;
+        if (data.hero_headline) {
+            const h = document.querySelector('.hero-headline');
+            if (h) h.textContent = data.hero_headline;
+        }
+        if (data.hero_subhead) {
+            const s = document.querySelector('.hero-subhead');
+            if (s) s.textContent = data.hero_subhead;
+        }
+        // Hero image fallback
+        if (data.hero_image) {
+            const bg = document.querySelector('.hero-video-background');
+            if (bg) bg.style.backgroundImage = `url(${data.hero_image})`;
+        }
+        // Hero video from CMS
+        if (data.hero_video) {
+            const srcEl = document.getElementById('heroVideoSource');
+            const videoEl = document.querySelector('.hero-video');
+            if (srcEl && videoEl) {
+                srcEl.src = data.hero_video;
+                videoEl.load();
+            }
+        }
+        this.updateMeta(data);
     }
 
     hydrateHomepageEvent(event) {
@@ -170,28 +171,25 @@ class CMSLoader {
                 if (bio && about.body) bio.innerHTML = CMSLoader.prototype.markdownToHTML(about.body);
                 loader.updateMeta(about.data);
             }
+        }
+
         const genericPages = ['speaking', 'corporate', 'safety', 'womens-events', 'podcast', 'private', 'hard-target-society'];
-        
         if (genericPages.includes(page)) {
             const content = await loader.loadContent('pages', page);
             if (content) {
-                // Update page title
                 if (content.data.title) document.title = content.data.title;
-                
-                // Update hero content if elements exist
                 const hh = document.querySelector('.hero-headline');
                 if (hh && content.data.hero_headline) hh.textContent = content.data.hero_headline;
-                
                 const hs = document.querySelector('.hero-subhead');
                 if (hs && content.data.hero_subhead) hs.textContent = content.data.hero_subhead;
-                
-                // Update main content areas with generic markup
-                const mainContent = document.querySelector('main, .content, .container');
-                if (mainContent && content.body) {
-                    mainContent.innerHTML = CMSLoader.prototype.markdownToHTML(content.body);
+                if (content.data.hero_image) {
+                    const bg = document.querySelector('.hero-video-background');
+                    if (bg) bg.style.backgroundImage = `url(${content.data.hero_image})`;
                 }
-                
-                // Update meta tags
+                const cmsBody = document.querySelector('.cms-body');
+                if (cmsBody && content.body) {
+                    cmsBody.innerHTML = CMSLoader.prototype.markdownToHTML(content.body);
+                }
                 loader.updateMeta(content.data);
             }
         }
