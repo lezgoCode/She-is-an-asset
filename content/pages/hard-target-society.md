@@ -1,138 +1,140 @@
 ---
-title: "The Hard Target Society - She's's An Asset"
-description: "Monthly training, coaching, and community support for women who want more than a one-time safety class. Ongoing development and empowerment."
-keywords: "Hard Target Society, monthly coaching, women's training, safety community, ongoing development, empowerment membership"
-hero_headline: "Join The Hard Target Society"
-hero_subhead: "Monthly training, coaching, and community support for women who want more than a one-time safety class. Build lasting confidence and skills with ongoing development."
+title: "Hard Target Society - She's An Asset"
+description: "Providing women consistent training and practice for being a hard target for predators, prepared in the event of an emergency and resilient in all areas of life."
+keywords: "Hard Target Society, monthly training, women's safety, resilience, community, ongoing coaching"
+hero_headline: "The Hard Target Society"
+hero_subhead: "Providing women consistent training and practice for being a hard target for predators, prepared in the event of an emergency and resilient in all areas of life."
 featured: false
 published: true
 ---
 
-# The Hard Target Society
+## Self‑protection only works if *you work it.*
 
-## More Than a One-Time Class
+Learning something once is great — **but does it stick?**
 
-Looking for ongoing support and skill development? The Hard Target Society is our monthly membership community for women committed to continuous growth in safety, confidence, and empowerment.
+Especially when chaos occurs, if you haven't practiced and made what you learned in class second nature...
+
+***you could find yourself feeling more like the problem than the solution.***
+
+### Next Live Training:
+
+- **Tuesday September 23rd at 8pm**  
+  **Topic:** Using Your Body as a weapon
+
+### Have you ever wanted to learn how to fight/protect yourself — but don't have time to commit to going to a martial arts gym?
+
+- Maybe you don't want to roll around with sweaty dudes—  
+- Maybe you're like the majority of women and feel a little intimidated to join—  
+- Or maybe you just don't know where to start?
+
+## The Hard Target Society is an excellent starting point for *all of this.*
+
+### Why This Exists:
+
+*You left our training on fire.*  
+*You remembered the moves.*  
+*You stood taller.*  
+*You felt powerful.*
+
+But a few months later, you froze in a moment that mattered — because the moves were gone.  
+*The confidence faded.*  
+*Life got busy.*
+
+***That's not your fault.***  
+*That's how most personal safety trainings work: one moment, and then… nothing.*
+
+*The Hard Target Society changes that.*  
+*This is where you remember the moves without having to go to class.*  
+*And it's where you build the muscle memory — in your body, in your voice, in your boundaries.*  
+*But we don't do it alone.*  
+*Because safety is personal…*  
+*But resilience?*  
+*That's built in community.*
+
+## This is the bridge.
+
+- Between that one class and long-term confidence
+- Between learning the moves and living them
+- Between feeling alone and being surrounded by women doing this work, too
+
+**The Society is monthly support, practice, coaching, and connection — for women who want more than a one‑time moment.**
+
+## This is your space to:
+
+- Stay consistent with personal safety tools
+- Feel grounded and powerful in your everyday life
+- Ask questions, get coaching, and stay connected
+- Be surrounded by a community of strong, smart women committed to walking tall together
+
+**This is how we make the "aha" moment last.**  
+**This is how we lead ourselves forward — together.**
 
 ## What You Get Each Month
 
-### Monthly Training Sessions
-Live, interactive training covering:
-- Advanced self-protection techniques
-- Situational awareness development
-- Confidence and presence building
-- Stress management and resilience
-- Communication and boundary-setting
+1. **Live Zoom Training (Recorded + Available Anytime)**  
+   *(Held one Tuesday a month at 8pm EST)*  
+   *Each month, we tackle real-life scenarios and sharpen skills.*
+   - Drills: Strikes, blocks, escapes
+   - Command Presence: Confident body language, owning the room, voice projection
+   - Situational Awareness Training: Safety with children, gas stations, airports, awkward interactions, traveling solo, social media safety, living alone, college safety and more!
+   - Home Safety: Setting your home up to be a hard target
+   - Emergency Action Planning
+   - Nervous System Regulation
+   - Mindset Practices
+   - Journal prompts
 
-### Small Group Coaching
-Intimate coaching circles where you get personalized attention and feedback. Work through real scenarios and challenges with expert guidance.
+2. **Livestream Monthly Coaching**  
+   *Bring your questions. Get feedback, coaching, and support on:*
+   - Boundary setting and holding
+   - Home security questions
+   - Body language
+   - Confidence building
+   - Recovery from scary moments
+   - Best practices for safety
 
-### Community Access
-Connect with other strong women pursuing growth and empowerment. Share experiences, celebrate victories, and get support during challenging times.
+3. **The Hard Target Vault**  
+   *Your private library of training*
+   - Exclusive video training content (no one else sees)
+   - Cheat sheets
+   - Monthly livestream videos recorded and stored here
+   - Zoom meeting recordings
 
-### Exclusive Resources
-Access to training materials, videos, audio guides, and continued education resources available only to Hard Target Society members.
+4. **The Society's Monthly Accountability**  
+   *Monthly prompts that build confidence, courage, and clarity.*
+   - Practice holding eye contact with people you just meet
+   - Clear out 3 safety liabilities in your home this week
+   - Notice exits in every room/store/restaurant you walk into
+   - Notice where you allowed people to overstep your boundaries and what steps you can take this month to stop that
+   - Work with trusting your intuition — inventory all of the times you listened to your intuition and how it helped you
 
-### Monthly Q&A Sessions
-Direct access to Autumn for your burning questions. Get personalized guidance on implementing what you've learned and navigating real-world situations.
+5. **Community Support** *(Inside a private Facebook group)*
+   - Get to know women from around the world who are experiencing similar things as you
+   - Make connections you normally don't have time to make
+   - Monthly threads where women who own businesses can share so we can support one another
+   - Ask questions as soon as they come up!
 
-## Membership Benefits
+6. **First Access & Discounts** *(Instantly become a VIP)*
+   - First to see ALL limited edition swag
+   - First to know about all trainings being held
+   - Exclusive discount on all She's An Asset in-person classes and events (excludes Hard Target Fundamentals with SRT Concepts)
+   - Discount on all She's An Asset swag
 
-### Ongoing Skill Development
-Continuous growth means continuous improvement. Build skills progressively rather than cramming everything into a single workshop.
+## How To Join
 
-### Personalized Coaching Attention
-Small group settings mean you get individualized feedback and support tailored to your specific challenges and goals.
+- **$19/month, cancel anytime**
+- **$95 for 6 months, get one month free**
+- Immediate access to current content and training schedule
+- You can cancel anytime without any additional fees
 
-### Accountability & Community
-Stay motivated with regular check-ins, goal-setting, and peer support from women on similar growth journeys.
+### Signature Item — Gift for joining Hard Target Society — Digital Welcome Kit
 
-### Flexible Learning
-Skip traditional classroom constraints. Learn at your own pace while having regular touchpoints for guidance and course corrections.
+- She's An Asset Phone Wallpaper
+- Mini audio training: Autumn's welcome + mindset reset
 
-### Cost-Effective Growth
-Much more affordable than repeated individual classes or private coaching, while providing ongoing access to expert training.
+## Join Today To Guarantee Your Seat!
 
-## How It Works
+**Once We Are Full — The Doors Will Close & When We Open Again, The Price Will Increase.**
 
-### Monthly Format
-- **First Friday:** New technique and skill training
-- **Third Friday:** Small group coaching and Q&A
-- **Throughout Month:** Access to resources and community discussions
-
-### Virtual Sessions
-All training happens live via Zoom, so you can participate from anywhere while maintaining the interactive, personalized experience.
-
-### Flexible Schedule
-Life happens. Miss a session? Access recordings and stay current with resources until the next live session.
-
-## Who This Is Perfect For
-
-### Women Committed to Growth
-You're serious about building real skills, not just checking a box. You want ongoing development and regular opportunities to practice and refine your abilities.
-
-### Previous Participants
-Familiar with our approach and ready for next-level development with more advanced techniques and deeper coaching.
-
-### Busy Professionals
-Want regular training and coaching that fits into your schedule without requiring travel or extensive time away from work and family.
-
-### Community-Oriented Learners
-Thrive in group settings where you can learn from others' experiences while sharing your own insights and challenges.
-
-## Investment
-
-### Monthly Membership
-**$19/month**
-
-**What's Included:**
-- 2 live training/coaching sessions per month
-- Access to exclusive training materials and resources
-- Private community group access
-- Monthly Q&A with Autumn
-- Session recordings for missed sessions
-
-### Annual Membership
-**$180/year** (Save $48 - essentially 2 months free)
-
-**All monthly benefits plus:**
-- 2 bonus exclusive training sessions per year
-- Priority access to special events and workshops
-- Discounts on private coaching and speaking engagements
-
-## Getting Started
-
-### Step 1: Join the Waitlist
-Due to high demand, we're managing community size to maintain intimacy and coaching quality. Join our waitlist to be notified when spots become available.
-
-### Step 2: Orientation Call
-Once accepted, you'll receive information for your orientation call with Autumn. Learn the ropes, meet other members, and clarify your growth goals.
-
-### Step 3: Monthly Engagement
-Start attending regular sessions, accessing resources, and engaging with the community. Your transformation journey begins immediately.
-
-## Frequently Asked Questions
-
-### What if I miss a session?
-All sessions are recorded and available for 30 days. Plus, we maintain continuity between sessions so you can catch up quickly.
-
-### How do I know if this is right for me?
-Perfect if you want ongoing development, community support, and regular coaching attention at an affordable price. Sign up for the waitlist and we'll help you decide.
-
-### What if I'm a beginner?
-While some experience with our approach is helpful, motivated beginners are welcome. The key is commitment to growth and willingness to learn progressively.
-
-### Can I pause my membership?
-Membership runs month-to-month with cancel-anytime flexibility, but monthly engagement provides the best transformation results.
-
-## Questions About Membership?
-
-**Email:** support@shesanasset.com
-**Subject:** Hard Target Society Inquiry
-
-## Not Ready for Monthly Commitment?
-
-Check out our other offerings:
-- [One-Time Events](/womens-events.html) - Perfect for trying our approach
-- [Private Coaching](/private.html) - Intensive one-on-one transformation
-- [Speaking Engagements](/speaking.html) - Leadership training for organizations
+- [Join Hard Target Society](simple-payment.html?product=hard-target-monthly&price=19.00&period=month)
+- [6‑Month Plan - $95 (Save $19)](simple-payment.html?product=hard-target-6month&price=95.00&period=6months)
+- [Have Questions?](mailto:support@shesanasset.com?subject=Hard%20Target%20Society%20Inquiry)
