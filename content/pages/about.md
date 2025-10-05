@@ -14,7 +14,8 @@ date: 2025-10-04T10:42:23.238Z
 ---
 # Meet Autumn
 
- and mindset.
+Most people teach confidence from the neck up.
+I teach it from the ground up — body, voice, presence, and mindset.
 
 I'm Autumn Schmidt — a former police officer turned trauma-informed empowerment teacher, personal safety coach, and speaker. I help women and high-stakes teams build confidence, calm, and leadership that actually shows up in the real world.
 
