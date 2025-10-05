@@ -94,6 +94,15 @@ class CMSLoader {
             if (s) s.textContent = data.hero_subhead;
         }
         this.updateMeta(data);
+        // Hero video from CMS
+        if (data.hero_video) {
+          const srcEl = document.getElementById('heroVideoSource');
+          const videoEl = document.querySelector('.hero-video');
+          if (srcEl && videoEl) {
+            srcEl.src = data.hero_video;  // can be /images/uploads/yourvideo.mp4 or full URL
+            videoEl.load();
+              }
+}
     }
 
     hydrateHomepageEvent(event) {
