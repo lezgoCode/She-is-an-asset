@@ -8,7 +8,7 @@ featured: false
 published: true
 hero_headline: About Autumn
 hero_subhead: Former cop. Trauma survivor. Self-Trust strategist.
-hero_video: /images/uploads/a94887a1-44c7-4bb2-a3c6-2a5a48da3128.jpeg
+hero_video: ""
 hero_image: /images/uploads/a94887a1-44c7-4bb2-a3c6-2a5a48da3128.jpeg
 date: 2025-10-04T10:42:23.238Z
 ---
