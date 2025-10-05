@@ -1,18 +1,11 @@
 ---
-title: Corporate Training - She's An Asset
-description: Transform your team with corporate leadership trainings designed
-  for high-performing organizations. From resilience to inclusive leadership.
-keywords: corporate training, leadership development, team building, workplace
-  safety, Autumn corporate speaking
+title: "Corporate Training - She's An Asset"
+description: "Transform your team with corporate leadership trainings designed for high-performing organizations. From resilience to inclusive leadership."
+keywords: "corporate training, leadership development, team building, workplace safety, Autumn corporate speaking"
+hero_headline: "Transform Your Team's Presence & Performance"
+hero_subhead: "Corporate leadership trainings designed for teams who want more than motivational speeches. We build real-world skills for high-stakes environments."
 featured: false
 published: true
-hero_headline: Transform Your Team's Presence & Performance
-hero_subhead: Corporate leadership trainings designed for teams who want more
-  than motivational speeches. We build real-world skills for high-stakes
-  environments.
-hero_video: /images/uploads/update-1.mp4
-hero_image: /images/uploads/img_8589.jpeg
-date: 2025-10-05T14:30:13.410Z
 ---
 
 # Corporate Leadership Training That Works
