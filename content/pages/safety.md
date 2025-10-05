@@ -1,11 +1,17 @@
 ---
-title: "Home & Business Safety - She's An Asset"
-description: "Comprehensive safety training for homes, businesses, and high-risk environments. From de-escalation to personal protection strategies."
-keywords: "home safety, business safety, de-escalation training, personal protection, workplace security, safety training"
-hero_headline: "Safety Training That Works in Real Life"
-hero_subhead: "From hair salons to health clinics, real estate teams to leadership orgs—everyone deserves a plan. Build confidence and create safer spaces."
+keywords: home safety, business safety, de-escalation training, personal
+  protection, workplace security, safety training
 featured: false
 published: true
+title: Home & Business Safety - She's An Asset
+description: Comprehensive safety training for homes, businesses, and high-risk
+  environments. From de-escalation to personal protection strategies.
+hero_headline: Safety Training That Works in Real Life
+hero_subhead: From hair salons to health clinics, real estate teams to
+  leadership orgs—everyone deserves a plan. Build confidence and create safer
+  spaces.
+hero_video: /images/uploads/update-1.mp4
+date: 2025-10-05T11:28:20.465Z
 ---
 
 # Home & Business Safety Training
