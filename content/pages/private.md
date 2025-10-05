@@ -1,131 +1,87 @@
 ---
-title: "Work Privately with Autumn - She's An Asset"
-description: "One-on-one coaching with Autumn Schmidt for women ready to stop second-guessing and start showing up with powerful clarity in all areas of life."
-keywords: "private coaching, one on one coaching, Autumn Schmidt coaching, leadership coaching, confidence coaching, executive coaching"
-hero_headline: "Private Coaching for Women Who Mean Business"
-hero_subhead: "Work privately with Autumn for personalized leadership development, confidence building, and authentic power. For women ready to transform how they show up in boardrooms, relationships, and life."
+title: "Private Coaching - She's An Asset"
+description: "Transform your life with private coaching from Autumn. Get clarity, boundaries, and real strength through personalized 1:1 sessions."
+keywords: "private coaching, life coaching, leadership coaching, personal development, Autumn coaching"
+hero_headline: "Transform Your Life with Private Coaching"
+hero_subhead: "Ready to lead the next chapter of your life with clarity, boundaries, and real strength?"
 featured: false
 published: true
 ---
 
-# Private Coaching with Autumn Schmidt
+This isn't generic mindset work. It's coaching that gets in the weeds with you — to help you move forward when life is messy, the stakes are high, and you need a clear way through.
 
-## One-on-One Transformation for Ambitious Women
+## Who It's For
 
-Ready to stop second-guessing yourself and start leading with unshakeable confidence? My private coaching is for women who want personalized, deep transformation—not generic advice or surface-level tips.
+This coaching is for you if:
 
-## Who This Is For
+- You're standing at the edge of something new — and you don't want to do it alone
+- You're tired of shrinking, circling, overthinking, or overgiving
+- You're ready to stop managing everyone else's expectations and start living by your own
+- You want tools, accountability, and real clarity — not platitudes
 
-### High-Achieving Professional Women
-- Executives and senior leaders ready to amplify their impact
-- Entrepreneurs scaling their business and their leadership
-- Professionals transitioning into new roles or higher levels of responsibility
-- Women who want to lead authentically while maintaining their humanity
+Whether you're navigating a major life transition, ready to level up your leadership, or just trying to find your footing again — this is personal strategy, support, and empowerment.
 
-### Women Seeking Personal Mastery
-- Anyone tired of playing small or living in others' shadows
-- Women navigating major life transitions (career changes, relationship shifts, new responsibilities)
-- Those ready to heal trauma responses and show up powerfully in all relationships
-- Women who want practical tools for confidence, boundaries, and authentic authority
+## How It Works
 
-## How We Work Together
+### 1:1 Power Session
+You need clarity fast — not months of sessions.
 
-### Deep Assessment & Strategy
-We begin with comprehensive evaluation of your current strengths, challenges, goals, and patterns. No generic coaching—only strategies tailored to your specific situation, industry, and aspirations.
+This one-time 75-minute session is perfect if you're:
 
-### Personalized Development Plan
-Based on your unique needs, we create a customized coaching plan that addresses:
-- Leadership presence and authority
-- Communication and influence strategies
-- Confidence and self-trust building
-- Boundary-setting and relationship dynamics
-- Stress management and resilience tools
+- Stuck on a big decision
+- Navigating burnout, conflict, or a transition
+- Craving an outside perspective with real tools
 
-### Bi-Weekly Intensive Sessions
-Regular 90-minute deep-dive sessions focused on breakthrough moments, skill-building, and pattern recognition. These aren't check-ins—they're transformative experiences that create lasting change.
+**Includes:**
+- Pre-session intake form
+- 75-minute Zoom session
+- Personalized follow-up tools and notes
 
-### Between-Session Support
-Personalized resources, reflection exercises, and real-world implementation strategies. Plus unlimited email support for mid-week insights, questions, and breakthroughs.
+**One-time:** $297  
+[Book a Power Session](simple-payment.html?product=power-session&price=297.00&period=onetime)
 
-## What You'll Transform
+### Ongoing Coaching
+This is the full journey.
 
-### Professional Presence
-Learn to command respect and influence outcomes through body language, voice, and presence. Develop authentic authority that inspires trust and drives results.
+We walk through the next chapter together — with consistent coaching and support. Perfect if you're:
 
-### Leadership Confidence
-Stop second-guessing your instincts and decisions. Build unshakeable self-trust and the courage to lead with clarity, even in uncertainty.
+- Building a new chapter in life or work
+- Wanting steady accountability
+- Craving tools to lead yourself with more strength and calm
 
-### Boundary Mastery
-Create healthy boundaries that protect your energy while maintaining authentic relationships. Stop people-pleasing and start prioritizing your wellbeing and success.
+**Includes:**
+- 60-minute intake & goal mapping
+- Biweekly or weekly 45-minute Zoom calls
+- Ongoing support via voice/text between sessions
+- Tools, follow-ups, and accountability check-ins
 
-### Relationship Dynamics
-Transform how you show up in all relationships—professional, romantic, family, and friendships. Stop shrinking to accommodate others and start showing up as your full, authentic self.
+**Biweekly:** $495/month  
+**Weekly:** $925/month  
+[Apply for Ongoing Coaching](simple-payment.html?product=ongoing-coaching&price=495.00&period=month)
 
-### Stress and Resilience
-Develop practical tools for handling pressure, setbacks, and high-stakes situations. Learn to maintain clarity and confidence even when everything feels chaotic.
+## Outcomes You Can Expect
 
-## My Approach to Coaching
+- Feel clear and confident in your decisions
+- Set and hold boundaries that don't burn you out
+- Regulate your nervous system in high-stakes moments
+- Reclaim your voice, presence, and leadership
+- Actually like the person leading your life again — because it's you
 
-### Former Law Enforcement Perspective
-My background in law enforcement gives me unique insight into decision-making under pressure, reading situations accurately, and maintaining authority in challenging circumstances.
+## Why Work With Autumn
 
-### Trauma-Informed Methods
-We honor how past experiences shape your patterns and responses. Healing happens alongside skill-building, creating authentic transformation from the inside out.
+- **Former Law Enforcement** — Real-world experience in high-pressure situations and crisis management
+- **Trauma-Informed Coach** — Specialized training to help you heal and grow from challenging experiences
+- **Martial Arts Background** — Deep understanding of body awareness, confidence, and personal power
+- **Lived Experience** — She's rebuilt herself multiple times and knows what it takes to transform
 
-### Body-Based Learning
-We don't just talk about confidence—we build it through embodied practices that help you access your power, presence, and authority in real situations.
+Autumn isn't a hype woman or a motivational speaker.  
+She's someone who's been in the trenches and knows how to help you lead yourself forward, stronger and smarter.
 
-### Real-World Application
-Every session includes specific takeaways you can implement immediately in your work, relationships, and daily life.
+You don't need to do this alone.  
+Let's do it together.
 
-## What Clients Say
+## Ready to Start?
 
-*"Autumn helped me transition from surviving to thriving. Her coaching gave me the tools to lead with authority while staying true to my values."*
-
-*"Finally, coaching that addresses both my professional challenges and personal patterns. The transformation has been incredible."*
-
-*"Working with Autumn has changed how I show up in every room. The confidence is real, not performative, and it makes all the difference."*
-
-## Investment & Commitment
-
-### 6-Month Intensive Program
-- Initial assessment and strategy session
-- 12 bi-weekly intensive coaching sessions
-- Between-session resources and support
-- Unlimited email support
-- Final assessment and continued growth plan
-
-### Investment
-$3,000/month for 6 months
-*Payment plans available*
-
-## Application Process
-
-### Step 1: Application
-Complete a brief application sharing your current situation, goals, and what you're hoping to transform through coaching.
-
-### Step 2: Discovery Call
-30-minute conversation to assess fit, clarify expectations, and determine if we're aligned on your transformation goals.
-
-### Step 3: Commitment
-If we decide to move forward, we'll schedule your initial assessment session and begin your personalized coaching journey.
-
-## Limited Availability
-
-I work with a maximum of 8 private clients at a time to ensure each person receives depth, attention, and transformation they deserve.
-
-**Current Availability:** Limited spots available for January 2024 start.
-
-## Ready to Stop Second-Guessing Yourself?
-
-If you're ready to invest in deep, lasting transformation and are committed to showing up authentically powerful in all areas of your life, I'd love to hear from you.
-
-**Email:** autumn@autumnclifford.com
-**Subject:** Private Coaching Application
-
-## Not Ready for Private Coaching?
-
-Check out our other offerings:
-- [The Hard Target Society](/hard-target-society.html) - Monthly group coaching and training
-- [Speaking Engagements](/speaking.html) - Leadership and resilience keynotes for your organization
-- [Events & Workshops](/womens-events.html) - Transformative experiences for individuals and groups
+- [Book a Power Session](mailto:support@shesanasset.com?subject=Power%20Session)
+- [Apply for Ongoing Coaching](mailto:support@shesanasset.com?subject=Ongoing%20Coaching)
+- [Have Questions? Contact Me Directly](mailto:support@shesanasset.com?subject=Coaching%20Questions)
