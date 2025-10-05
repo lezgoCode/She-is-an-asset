@@ -1,11 +1,16 @@
 ---
-title: "She's An Asset - Women's Events | Leadership & Self-Protection Training"
-description: "Live experiences that teach you to stop shrinking and start standing tall. Hands-on trainings that blend self-protection, intuition, mindset, and resilience."
-keywords: "women's events, women's workshops, self-protection, empowerment, safety training, women's leadership"
-hero_headline: "Not Just Self-Defense. Definitely Not a Lecture."
-hero_subhead: "You'll walk in curious. You'll walk out changed."
+keywords: women's events, women's workshops, self-protection, empowerment,
+  safety training, women's leadership
 featured: false
 published: true
+title: She's An Asset - Women's Events | Leadership & Self-Protection Training
+description: Live experiences that teach you to stop shrinking and start
+  standing tall. Hands-on trainings that blend self-protection, intuition,
+  mindset, and resilience.
+hero_headline: Not Just Self-Defense. Definitely Not a Lecture.
+hero_subhead: You'll walk in curious. You'll walk out changed.
+hero_video: /images/uploads/update-1.mp4
+date: 2025-10-05T20:57:43.610Z
 ---
 
 # Women's Events
