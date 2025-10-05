@@ -8,6 +8,7 @@ description: Meet Autumn Schmidt, former police officer turned trauma-informed
   empowerment trainer, personal safety coach, and speaker.
 hero_headline: About Autumn
 hero_subhead: Former cop. Trauma survivor. Leadership coach.
+hero_video: /images/uploads/update-1.mp4
 date: 2025-10-04T10:42:23.238Z
 ---
 
