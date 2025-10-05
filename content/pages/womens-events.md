@@ -9,7 +9,7 @@ featured: false
 published: true
 hero_headline: Not Just Self-Defense. Definitely Not a Lecture.
 hero_subhead: You'll walk in curious. You'll walk out changed.
-hero_video: /images/uploads/update-1.mp4
+hero_video: https://youtu.be/mfKsyONofac?si=AAESJIq5-Zx2m0FU
 hero_image: ""
 date: 2025-10-05T20:57:43.610Z
 ---
