@@ -98,10 +98,34 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-video-background">
-            <!-- Video temporarily removed for GitHub upload -->
-            <!-- <video autoplay muted loop playsinline>
-                <source src="Video.mp4" type="video/mp4">
-            </video> -->
+                <video class="hero-video" autoplay muted loop playsinline>
+      <source id="heroVideoSource" src="" type="video/mp4">
+    </video>
+    ```
+- Wire the video to the CMS (home page)
+  - In js/cms-loader.js, inside hydrateHome(data):
+    ```javascript
+    const videoSrc = data.hero_video;
+    if (videoSrc) {
+      const srcEl = document.getElementById('heroVideoSource');
+      const videoEl = document.querySelector('.hero-video');
+      if (srcEl && videoEl) {
+        srcEl.src = videoSrc;
+        videoEl.load();
+      }
+    }
+    ```
+- Upload the video via CMS
+  - In CMS → Pages → “She’s An Asset - Leadership & Empowerment Training”
+  - Set “Hero Video” to an MP4 you upload (keep it compressed; target 10–20 MB max)
+  - Save/Publish
+
+- Hard refresh the site after deploy (Ctrl/Cmd+Shift+R)
+
+Notes:
+- Keep autoplay working: video must be muted and playsinline.
+- If you also want a poster image, add poster="images/uploads/your-poster.jpg" on the <video> tag.
+- If the video is large, compress first (720p, ~2–4 Mbps) or host externally and use the absolute URL in “Hero Video”.
             <div class="hero-video-overlay"></div>
         </div>
         <div class="hero-content">
