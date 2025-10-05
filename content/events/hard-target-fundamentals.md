@@ -8,7 +8,7 @@ location: Scarborough Fish & Game Association — 21 Fish and Game Lane,
 duration: 7 hours • Doors at 8:45 AM
 price: $199.00
 eventbrite_link: https://www.eventbrite.com/e/shes-an-asset-hard-target-fundamentals-awareness-resiliency-firearms-tickets-1584233808969?aff=oddtdtcreator
-image: /images/uploads/img_8589.jpeg
+image: /images/uploads/srt-and-she-s-an-asset-level-1-class-5.png
 featured: true
 published: true
 ---
