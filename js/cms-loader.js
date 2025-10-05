@@ -83,25 +83,29 @@ class CMSLoader {
     }
 
     hydrateHome(page) {
-        if (!page) return;
-        const { data } = page;
-        if (data.hero_headline) {
-            const h = document.querySelector('.hero-headline');
-            if (h) h.textContent = data.hero_headline;
-        }
-        if (data.hero_subhead) {
-            const s = document.querySelector('.hero-subhead');
-            if (s) s.textContent = data.hero_subhead;
-        }
-        this.updateMeta(data);
-        // Hero video from CMS
-        if (data.hero_video) {
-          const srcEl = document.getElementById('heroVideoSource');
-          const videoEl = document.querySelector('.hero-video');
-          if (srcEl && videoEl) {
-            srcEl.src = data.hero_video;  // can be /images/uploads/yourvideo.mp4 or full URL
-            videoEl.load();
-              }
+  if (!page) return;
+  const { data } = page;
+
+  if (data.hero_headline) {
+    const h = document.querySelector('.hero-headline');
+    if (h) h.textContent = data.hero_headline;
+  }
+  if (data.hero_subhead) {
+    const s = document.querySelector('.hero-subhead');
+    if (s) s.textContent = data.hero_subhead;
+  }
+
+  // Hero video from CMS (expects a <video.hero-video><source id="heroVideoSource"></source></video> in index.html)
+  if (data.hero_video) {
+    const srcEl = document.getElementById('heroVideoSource');
+    const videoEl = document.querySelector('.hero-video');
+    if (srcEl && videoEl) {
+      srcEl.src = data.hero_video; // e.g. /images/uploads/hero.mp4 or full URL
+      videoEl.load();
+    }
+  }
+
+  this.updateMeta(data);
 }
     }
 
