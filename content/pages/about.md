@@ -1,7 +1,7 @@
 ---
 title: "About Autumn - "
 description: Meet Autumn Schmidt | Founder of She's An Asset™ | Creator of The
-  Hard Target Method™ | Former cop turned self-trust strategist.
+  Hard Target Method™ | Former cop turned
 keywords: About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership
   coach, safety expert, self-trust
 featured: false
