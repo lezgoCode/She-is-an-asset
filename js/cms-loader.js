@@ -157,15 +157,29 @@ class CMSLoader {
                 if (bio && about.body) bio.innerHTML = CMSLoader.prototype.markdownToHTML(about.body);
                 loader.updateMeta(about.data);
             }
-        } else if (page === 'speaking') {
-            const speaking = await loader.loadContent('pages', 'speaking');
-            if (speaking) {
-                const hh2 = document.querySelector('.hero-headline');
-                if (hh2 && speaking.data.hero_headline) hh2.textContent = speaking.data.hero_headline;
-                const hs2 = document.querySelector('.hero-subhead');
-                if (hs2 && speaking.data.hero_subhead) hs2.textContent = speaking.data.hero_subhead;
-                if (speaking.data.title) document.title = speaking.data.title;
-                loader.updateMeta(speaking.data);
+        const genericPages = ['speaking', 'corporate', 'safety', 'womens-events', 'podcast', 'private', 'hard-target-society'];
+        
+        if (genericPages.includes(page)) {
+            const content = await loader.loadContent('pages', page);
+            if (content) {
+                // Update page title
+                if (content.data.title) document.title = content.data.title;
+                
+                // Update hero content if elements exist
+                const hh = document.querySelector('.hero-headline');
+                if (hh && content.data.hero_headline) hh.textContent = content.data.hero_headline;
+                
+                const hs = document.querySelector('.hero-subhead');
+                if (hs && content.data.hero_subhead) hs.textContent = content.data.hero_subhead;
+                
+                // Update main content areas with generic markup
+                const mainContent = document.querySelector('main, .content, .container');
+                if (mainContent && content.body) {
+                    mainContent.innerHTML = CMSLoader.prototype.markdownToHTML(content.body);
+                }
+                
+                // Update meta tags
+                loader.updateMeta(content.data);
             }
         }
     });
@@ -179,7 +193,3 @@ CMSLoader.prototype.markdownToHTML = function(md) {
     const blocks = md.trim().split(/\n\s*\n/);
     return blocks.map(b => `<p>${b.replace(/\n/g, '<br>')}</p>`).join('');
 };
-
-// Export for use in other scripts
-window.CMSLoader = CMSLoader;
-window.cmsLoader = cmsLoader;
