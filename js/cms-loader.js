@@ -169,6 +169,11 @@ class CMSLoader {
                 if (hs && about.data.hero_subhead) hs.textContent = about.data.hero_subhead;
                 const bio = document.querySelector('.autumn-bio');
                 if (bio && about.body) bio.innerHTML = CMSLoader.prototype.markdownToHTML(about.body);
+                // About portrait placeholder from CMS
+                if (about.data.about_image) {
+                    const img = document.querySelector('.autumn-image img');
+                    if (img) img.setAttribute('src', about.data.about_image);
+                }
                 loader.updateMeta(about.data);
             }
         }
