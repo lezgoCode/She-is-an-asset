@@ -1,11 +1,17 @@
 ---
-title: "The Podcast - She's An Asset"
-description: "Listen to The She's An Asset Podcast for conversations about leadership, safety, resilience, and empowerment with Autumn Schmidt and special guests."
-keywords: "She's An Asset podcast, women's podcast, leadership podcast, safety podcast, empowerment podcast, Autumn Schmidt podcast"
-hero_headline: "She's An Asset Podcast"
-hero_subhead: "Weekly episodes featuring honest conversations about women's empowerment, leadership development, and practical safety training."
+keywords: She's An Asset podcast, women's podcast, leadership podcast, safety
+  podcast, empowerment podcast, Autumn Schmidt podcast
 featured: false
 published: true
+title: The Podcast - She's An Asset
+description: Listen to The She's An Asset Podcast for conversations about
+  leadership, safety, resilience, and empowerment with Autumn Schmidt and
+  special guests.
+hero_headline: She's An Asset Podcast
+hero_subhead: Weekly episodes featuring honest conversations about women's
+  empowerment, leadership development, and practical safety training.
+hero_video: /images/uploads/5.mp4
+date: 2025-10-06T15:19:31.938Z
 ---
 
 # Featured Episodes
