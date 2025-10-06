@@ -32,6 +32,7 @@ collections:
       - {label: "Hero Video", name: "hero_video", widget: "file", required: false}
       - {label: "Hero Image", name: "hero_image", widget: "image", required: false}
       - {label: "About Portrait Image", name: "about_image", widget: "image", required: false}
+      - {label: "Speaking Portrait Image", name: "speaking_image", widget: "image", required: false}
       - {label: "Content", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime", required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
@@ -134,4 +135,6 @@ collections:
               {label: "Twitter", name: "twitter", widget: "string", required: false}
             ]}
           - {label: "Footer Text", name: "footer_text", widget: "text"}
+
+
 
