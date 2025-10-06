@@ -1,11 +1,18 @@
 ---
-title: "Book Autumn to Speak - She's An Asset"
-description: "Transform your audience with keynotes that blend real stories with practical tools. From resilience to leadership, Autumn delivers powerful messages."
-keywords: "Book Autumn to speak, corporate speaking, keynote speaker, leadership development, resilience training"
-hero_headline: "Let Autumn Transform Your Event"
-hero_subhead: "From corporate conferences to women's empowerment events, Autumn delivers powerful, practical content that leaves audiences inspired and equipped with real tools."
+title: Book Autumn to Speak - She's An Asset
+description: Transform your audience with keynotes that blend real stories with
+  practical tools. From resilience to leadership, Autumn delivers powerful
+  messages.
+keywords: Book Autumn to speak, corporate speaking, keynote speaker, leadership
+  development, resilience training
+hero_headline: Let Autumn Transform Your Event
+hero_subhead: From corporate conferences to women's empowerment events, Autumn
+  delivers powerful, practical content that leaves audiences inspired and
+  equipped with real tools.
+speaking_image: /images/uploads/c.png
 featured: false
 published: true
+date: 2025-10-06T12:53:50.259Z
 ---
 
 # Keynotes That Transform and Inspire
