@@ -1,5 +1,4 @@
 ---
-about_image: autumn.png
 title: About Autumn - She's An Asset
 description: Meet Autumn Schmidt, former police officer turned trauma-informed
   empowerment trainer, personal safety coach, and speaker.
@@ -8,9 +7,10 @@ keywords: About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership
 hero_headline: About Autumn - She's An Asset
 hero_subhead: The woman behind She's An Asset
 hero_video: /images/uploads/img_8589.jpeg
+about_image: /images/uploads/a94887a1-44c7-4bb2-a3c6-2a5a48da3128.jpeg
+date: 2025-10-06T11:57:37.889Z
 featured: false
 published: true
-date: 2025-10-06T11:57:37.889Z
 ---
 
 # Meet Autumn
