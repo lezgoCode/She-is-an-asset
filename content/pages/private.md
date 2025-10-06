@@ -1,11 +1,16 @@
 ---
-title: "Private Coaching - She's An Asset"
-description: "Transform your life with private coaching from Autumn. Get clarity, boundaries, and real strength through personalized 1:1 sessions."
-keywords: "private coaching, life coaching, leadership coaching, personal development, Autumn coaching"
-hero_headline: "Transform Your Life with Private Coaching"
-hero_subhead: "Ready to lead the next chapter of your life with clarity, boundaries, and real strength?"
+keywords: private coaching, life coaching, leadership coaching, personal
+  development, Autumn coaching
 featured: false
 published: true
+title: Private Coaching - She's An Asset
+description: Transform your life with private coaching from Autumn. Get clarity,
+  boundaries, and real strength through personalized 1:1 sessions.
+hero_headline: Transform Your Life with Private Coaching
+hero_subhead: Ready to lead the next chapter of your life with clarity,
+  boundaries, and real strength?
+hero_video: /images/uploads/1.mp4
+date: 2025-10-06T15:19:47.643Z
 ---
 
 This isn't generic mindset work. It's coaching that gets in the weeds with you — to help you move forward when life is messy, the stakes are high, and you need a clear way through.
