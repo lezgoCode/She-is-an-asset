@@ -1,11 +1,18 @@
 ---
-title: "Hard Target Society - She's An Asset"
-description: "Providing women consistent training and practice for being a hard target for predators, prepared in the event of an emergency and resilient in all areas of life."
-keywords: "Hard Target Society, monthly training, women's safety, resilience, community, ongoing coaching"
-hero_headline: "The Hard Target Society"
-hero_subhead: "Providing women consistent training and practice for being a hard target for predators, prepared in the event of an emergency and resilient in all areas of life."
+keywords: Hard Target Society, monthly training, women's safety, resilience,
+  community, ongoing coaching
 featured: false
 published: true
+title: Hard Target Society - She's An Asset
+description: Providing women consistent training and practice for being a hard
+  target for predators, prepared in the event of an emergency and resilient in
+  all areas of life.
+hero_headline: The Hard Target Society
+hero_subhead: Providing women consistent training and practice for being a hard
+  target for predators, prepared in the event of an emergency and resilient in
+  all areas of life.
+hero_video: /images/uploads/4.mp4
+date: 2025-10-06T15:19:13.439Z
 ---
 
 ## Self‑protection only works if *you work it.*
