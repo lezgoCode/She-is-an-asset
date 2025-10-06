@@ -1,11 +1,17 @@
 ---
-title: "Home & Business Safety - She's An Asset"
-description: "Safety assessments and training for homes and businesses. Get personalized safety plans and hands-on training with Autumn."
-keywords: "home safety, business safety, safety assessment, personal safety training, workplace safety"
-hero_headline: "Safety Starts at Home. And Work."
-hero_subhead: "Whether you're a business owner, parent, or someone who just wants to feel more prepared, these private sessions are your blueprint for safety, awareness, and resilience—right where you live or lead."
+keywords: home safety, business safety, safety assessment, personal safety
+  training, workplace safety
 featured: false
 published: true
+title: Home & Business Safety - She's An Asset
+description: Safety assessments and training for homes and businesses. Get
+  personalized safety plans and hands-on training with Autumn.
+hero_headline: Safety Starts at Home. And Work.
+hero_subhead: Whether you're a business owner, parent, or someone who just wants
+  to feel more prepared, these private sessions are your blueprint for safety,
+  awareness, and resilience—right where you live or lead.
+hero_video: /images/uploads/2.mp4
+date: 2025-10-06T15:20:01.910Z
 ---
 
 # Safety Starts at Home. And Work.
