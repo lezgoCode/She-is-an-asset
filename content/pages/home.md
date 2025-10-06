@@ -1,12 +1,17 @@
 ---
-title: "She's An Asset - Leadership & Empowerment Training"
-description: "Empowering women to lead with confidence, boundaries, and real strength. Women's safety workshops, corporate training, and leadership development."
-keywords: "women's empowerment, leadership training, safety workshops, corporate training, Autumn coaching"
-hero_headline: "You don't need to feel scared. You need to feel ready."
-hero_subhead: "She's An Asset helps women build real-world safety skills and body-based confidence—so you move through the world with presence, power, and peace of mind."
-hero_video: "Video.mp4"
-featured: true
+title: She's An Asset - Leadership & Empowerment Training
+description: Empowering women to lead with confidence, boundaries, and real
+  strength. Women's safety workshops, corporate training, and leadership
+  development.
+keywords: women's empowerment, leadership training, safety workshops, corporate
+  training, Autumn coaching
+hero_headline: You don't need to feel scared. You need to feel ready.
+hero_subhead: She's An Asset helps women build real-world safety skills and
+  body-based confidence—so you move through the world with presence, power, and
+  peace of mind.
+hero_video: /images/uploads/1.mp4
 date: 2025-01-01T00:00:00.000Z
+featured: true
 ---
 
 # Welcome to She's An Asset
