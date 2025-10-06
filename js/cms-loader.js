@@ -191,6 +191,11 @@ class CMSLoader {
                     const bg = document.querySelector('.hero-video-background');
                     if (bg) bg.style.backgroundImage = `url(${content.data.hero_image})`;
                 }
+                // Speaking page portrait image
+                if (page === 'speaking' && content.data.speaking_image) {
+                    const sp = document.querySelector('.autumn-portrait-img');
+                    if (sp) sp.setAttribute('src', content.data.speaking_image);
+                }
                 const cmsBody = document.querySelector('.cms-body');
                 if (cmsBody && content.body) {
                     cmsBody.innerHTML = CMSLoader.prototype.markdownToHTML(content.body);
