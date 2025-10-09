@@ -9,7 +9,7 @@ description: Transform your life with private coaching from Autumn. Get clarity,
 hero_headline: Transform Your Life with Private Coaching
 hero_subhead: Ready to lead the next chapter of your life with clarity,
   boundaries, and real strength?
-hero_video: /images/uploads/1.mp4
+hero_video: /images/uploads/5.mp4
 date: 2025-10-06T15:19:47.643Z
 ---
 
