@@ -10,7 +10,7 @@ hero_headline: Safety Starts at Home. And Work.
 hero_subhead: Whether you're a business owner, parent, or someone who just wants
   to feel more prepared, these private sessions are your blueprint for safety,
   awareness, and resilience—right where you live or lead.
-hero_video: /images/uploads/2.mp4
+hero_video: /images/uploads/vid2.mp4
 date: 2025-10-06T15:20:01.910Z
 ---
 
