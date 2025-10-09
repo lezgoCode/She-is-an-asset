@@ -6,7 +6,7 @@ keywords: About Autumn, Autumn Schmidt, former cop, trauma survivor, leadership
   coach, safety expert
 hero_headline: About Autumn - She's An Asset
 hero_subhead: The woman behind She's An Asset
-hero_video: /images/uploads/2.mp4
+hero_video: /images/uploads/vid2.mp4
 about_image: /images/uploads/a94887a1-44c7-4bb2-a3c6-2a5a48da3128.jpeg
 date: 2025-10-06T11:57:37.889Z
 featured: false
