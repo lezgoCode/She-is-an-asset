@@ -10,7 +10,7 @@ hero_headline: Transform Your Team's Presence & Performance
 hero_subhead: Corporate leadership trainings designed for teams who want more
   than motivational speeches. We build real-world skills for high-stakes
   environments.
-hero_video: /images/uploads/3.mp4
+hero_video: /images/uploads/4.mp4
 date: 2025-10-05T20:42:02.814Z
 ---
 
