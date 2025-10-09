@@ -187,10 +187,23 @@ class CMSLoader {
                 if (hh && content.data.hero_headline) hh.textContent = content.data.hero_headline;
                 const hs = document.querySelector('.hero-subhead');
                 if (hs && content.data.hero_subhead) hs.textContent = content.data.hero_subhead;
+                
+                // Hero video from CMS (generic pages)
+                if (content.data.hero_video) {
+                    const srcEl = document.getElementById('heroVideoSource');
+                    const videoEl = document.querySelector('.hero-video');
+                    if (srcEl && videoEl) {
+                        srcEl.src = content.data.hero_video;
+                        videoEl.load();
+                    }
+                }
+                
+                // Hero image fallback
                 if (content.data.hero_image) {
                     const bg = document.querySelector('.hero-video-background');
                     if (bg) bg.style.backgroundImage = `url(${content.data.hero_image})`;
                 }
+                
                 // Speaking page portrait image
                 if (page === 'speaking' && content.data.speaking_image) {
                     const sp = document.querySelector('.autumn-portrait-img');
