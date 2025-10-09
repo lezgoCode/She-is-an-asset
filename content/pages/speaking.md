@@ -9,7 +9,7 @@ hero_headline: Let Autumn Transform Your Event
 hero_subhead: From corporate conferences to women's empowerment events, Autumn
   delivers powerful, practical content that leaves audiences inspired and
   equipped with real tools.
-hero_video: /images/uploads/4.mp4
+hero_video: /images/uploads/1.mp4
 speaking_image: /images/uploads/c.png
 featured: false
 published: true
