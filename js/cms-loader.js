@@ -174,6 +174,15 @@ class CMSLoader {
                     const img = document.querySelector('.autumn-image img');
                     if (img) img.setAttribute('src', about.data.about_image);
                 }
+                // Hero video from CMS for About page
+                if (about.data.hero_video) {
+                    const srcEl = document.getElementById('heroVideoSource');
+                    const videoEl = document.querySelector('.hero-video');
+                    if (srcEl && videoEl) {
+                        srcEl.src = about.data.hero_video;
+                        videoEl.load();
+                    }
+                }
                 loader.updateMeta(about.data);
             }
         }
