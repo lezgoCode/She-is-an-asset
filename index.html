@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,24 +44,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 </head>
-    <script>
-  (function () {
-    var h = window.location.hash || '';
-    var needsIdentity = /invite_token=|confirmation_token=|recovery_token=/.test(h);
-    if (!needsIdentity) return;
-    var s = document.createElement('script');
-    s.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
-    s.onload = function () {
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.init();
-        window.netlifyIdentity.on('init', function () {
-          window.netlifyIdentity.open('login');
-        });
-      }
-    };
-    document.head.appendChild(s);
-  })();
-</script>
 <body>
     <!-- Navigation -->
     <nav class="navbar home-navbar">
@@ -73,7 +55,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Autumn</a></li>
-                    <li><a href="womens-events.html">Women's Events</a></li>
+                    <li><a href="upcoming-events.html">Upcoming Events</a></li>
                     <li><a href="safety.html">Home & Business Safety</a></li>
                     <li><a href="corporate.html">Corporate Training</a></li>
                     <li><a href="podcast.html">The Podcast</a></li>
@@ -98,34 +80,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-video-background">
-                <video class="hero-video" autoplay muted loop playsinline>
-      <source id="heroVideoSource" src="" type="video/mp4">
-    </video>
-    ```
-- Wire the video to the CMS (home page)
-  - In js/cms-loader.js, inside hydrateHome(data):
-    ```javascript
-    const videoSrc = data.hero_video;
-    if (videoSrc) {
-      const srcEl = document.getElementById('heroVideoSource');
-      const videoEl = document.querySelector('.hero-video');
-      if (srcEl && videoEl) {
-        srcEl.src = videoSrc;
-        videoEl.load();
-      }
-    }
-    ```
-- Upload the video via CMS
-  - In CMS → Pages → “She’s An Asset - Leadership & Empowerment Training”
-  - Set “Hero Video” to an MP4 you upload (keep it compressed; target 10–20 MB max)
-  - Save/Publish
-
-- Hard refresh the site after deploy (Ctrl/Cmd+Shift+R)
-
-Notes:
-- Keep autoplay working: video must be muted and playsinline.
-- If you also want a poster image, add poster="images/uploads/your-poster.jpg" on the <video> tag.
-- If the video is large, compress first (720p, ~2–4 Mbps) or host externally and use the absolute URL in “Hero Video”.
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source id="heroVideoSource" src="" type="video/mp4">
+            </video>
             <div class="hero-video-overlay"></div>
         </div>
         <div class="hero-content">
@@ -220,7 +177,7 @@ Notes:
                 </div>
                 <div class="autumn-image">
                     <div class="placeholder-image">
-                        <img src="autumn.png" alt="Autumn" class="fit-contain">
+                        <img src="autumn.jpg" alt="Autumn" onerror="this.onerror=null;this.src='autumn.png';" class="fit-contain">
                     </div>
                 </div>
             </div>
