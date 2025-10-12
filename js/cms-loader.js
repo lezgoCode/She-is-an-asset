@@ -187,7 +187,7 @@ class CMSLoader {
             }
         }
 
-        const genericPages = ['speaking', 'corporate', 'safety', 'womens-events', 'podcast', 'private', 'hard-target-society'];
+        const genericPages = ['speaking', 'corporate', 'safety', 'womens-events', 'podcast', 'private', 'hard-target-society', 'upcoming-events'];
         if (genericPages.includes(page)) {
             const content = await loader.loadContent('pages', page);
             if (content) {
@@ -222,6 +222,39 @@ class CMSLoader {
                 if (cmsBody && content.body) {
                     cmsBody.innerHTML = CMSLoader.prototype.markdownToHTML(content.body);
                 }
+                
+                // Gallery images from CMS
+                if (content.data.gallery_images && content.data.gallery_images.length > 0) {
+                    const galleryTrack = document.querySelector('.gallery-track');
+                    if (galleryTrack) {
+                        // Clear existing gallery items
+                        galleryTrack.innerHTML = '';
+                        
+                        // Add CMS images
+                        content.data.gallery_images.forEach((img, idx) => {
+                            const item = document.createElement('div');
+                            item.className = 'gallery-item';
+                            const imgEl = document.createElement('img');
+                            imgEl.src = img.image || img;
+                            imgEl.alt = `Training Session ${idx + 1}`;
+                            item.appendChild(imgEl);
+                            galleryTrack.appendChild(item);
+                        });
+                        
+                        // Duplicate for seamless loop
+                        content.data.gallery_images.forEach((img, idx) => {
+                            const item = document.createElement('div');
+                            item.className = 'gallery-item';
+                            const imgEl = document.createElement('img');
+                            imgEl.src = img.image || img;
+                            imgEl.alt = `Training Session ${idx + 1}`;
+                            imgEl.setAttribute('aria-hidden', 'true');
+                            item.appendChild(imgEl);
+                            galleryTrack.appendChild(item);
+                        });
+                    }
+                }
+                
                 loader.updateMeta(content.data);
             }
         }
