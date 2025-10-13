@@ -5,16 +5,16 @@ keywords: "Hard Target Fundamentals, women's firearms training, self-defense, up
 hero_headline: "Upcoming Hard Target Fundamentals Trainings"
 hero_subhead: "Women's firearms basics, situational awareness and mindset training"
 gallery_images:
-  - image: "images/gallery/g1.png"
-  - image: "images/gallery/g2.png"
-  - image: "images/gallery/g3.png"
-  - image: "images/gallery/g4.png"
-  - image: "images/gallery/g5.png"
+  - image: "images/gallery/g1.webp"
+  - image: "images/gallery/g2.webp"
+  - image: "images/gallery/g3.webp"
+  - image: "images/gallery/g4.webp"
+  - image: "images/gallery/g5.webp"
 review_images:
-  - image: "review/r1.webp"
-  - image: "review/r2.webp"
-  - image: "review/r3.webp"
-  - image: "review/r4.webp"
+  - image: "images/reviews/r1.webp"
+  - image: "images/reviews/r2.webp"
+  - image: "images/reviews/r3.webp"
+  - image: "images/reviews/r4.webp"
 featured: false
 published: true
 ---
