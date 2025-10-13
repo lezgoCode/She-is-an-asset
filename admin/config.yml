@@ -34,6 +34,7 @@ collections:
       - {label: "About Portrait Image", name: "about_image", widget: "image", required: false}
       - {label: "Speaking Portrait Image", name: "speaking_image", widget: "image", required: false}
       - {label: "Gallery Images", name: "gallery_images", widget: "list", required: false, field: {label: "Image", name: "image", widget: "image"}}
+      - {label: "Review Images", name: "review_images", widget: "list", required: false, field: {label: "Image", name: "image", widget: "image"}}
       - {label: "Content", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime", required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
