@@ -4447,3 +4447,66 @@ blockquote cite {
         }
     }
 }
+
+/* Reviews Carousel */
+.reviews-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.reviews-track {
+    display: flex;
+    gap: 2rem;
+    animation: scrollReviews 25s linear infinite;
+}
+
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+.review-item {
+    flex: 0 0 auto;
+    width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.review-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.review-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-500px * 4 - 2rem * 4));
+    }
+}
+
+@media (max-width: 768px) {
+    .review-item {
+        width: 350px;
+    }
+    
+    @keyframes scrollReviews {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-350px * 4 - 2rem * 4));
+        }
+    }
+}
