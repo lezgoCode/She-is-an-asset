@@ -255,6 +255,38 @@ class CMSLoader {
                     }
                 }
                 
+                // Review images from CMS
+                if (content.data.review_images && content.data.review_images.length > 0) {
+                    const reviewsTrack = document.querySelector('.reviews-track');
+                    if (reviewsTrack) {
+                        // Clear existing review items
+                        reviewsTrack.innerHTML = '';
+                        
+                        // Add CMS review images
+                        content.data.review_images.forEach((img, idx) => {
+                            const item = document.createElement('div');
+                            item.className = 'review-item';
+                            const imgEl = document.createElement('img');
+                            imgEl.src = img.image || img;
+                            imgEl.alt = `Student Review ${idx + 1}`;
+                            item.appendChild(imgEl);
+                            reviewsTrack.appendChild(item);
+                        });
+                        
+                        // Duplicate for seamless loop
+                        content.data.review_images.forEach((img, idx) => {
+                            const item = document.createElement('div');
+                            item.className = 'review-item';
+                            const imgEl = document.createElement('img');
+                            imgEl.src = img.image || img;
+                            imgEl.alt = `Student Review ${idx + 1}`;
+                            imgEl.setAttribute('aria-hidden', 'true');
+                            item.appendChild(imgEl);
+                            reviewsTrack.appendChild(item);
+                        });
+                    }
+                }
+                
                 loader.updateMeta(content.data);
             }
         }
