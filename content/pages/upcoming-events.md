@@ -1,23 +1,20 @@
 ---
-title: Upcoming Trainings - She's An Asset
-description: Hard Target Fundamentals trainings for women. Firearms basics,
-  situational awareness, and mindset training in Scarborough, Maine.
-keywords: Hard Target Fundamentals, women's firearms training, self-defense,
-  upcoming events, Scarborough Maine
-hero_headline: Upcoming Hard Target Fundamentals Trainings
-hero_subhead: Women's firearms basics, situational awareness and mindset training
+title: "Upcoming Trainings - She's An Asset"
+description: "Hard Target Fundamentals trainings for women. Firearms basics, situational awareness, and mindset training in Scarborough, Maine."
+keywords: "Hard Target Fundamentals, women's firearms training, self-defense, upcoming events, Scarborough Maine"
+hero_headline: "Upcoming Hard Target Fundamentals Trainings"
+hero_subhead: "Women's firearms basics, situational awareness and mindset training"
 gallery_images:
-  - image: images/gallery/g1.webp
-  - image: images/gallery/g2.webp
-  - image: images/gallery/g3.webp
-  - image: images/gallery/g4.webp
-  - image: images/gallery/g5.webp
+  - image: "images/uploads/g1.webp"
+  - image: "images/uploads/g2.webp"
+  - image: "images/uploads/g3.webp"
+  - image: "images/uploads/g4.webp"
+  - image: "images/uploads/g5.webp"
 review_images:
-  - /images/uploads/r1.png.webp
-  - /images/uploads/r2.png.webp
-  - /images/uploads/r3.png.webp
-  - /images/uploads/r4.png.webp
-date: 2025-10-13T11:11:05.568Z
+  - image: "images/uploads/r1.webp"
+  - image: "images/uploads/r2.webp"
+  - image: "images/uploads/r3.webp"
+  - image: "images/uploads/r4.webp"
 featured: false
 published: true
 ---
