@@ -36,21 +36,63 @@ class CMSLoader {
     }
 
     parseYAML(yaml) {
-        // Minimal YAML key: value parser sufficient for frontmatter
+        // Minimal YAML parser with support for lists
         const obj = {};
         const lines = yaml.split('\n');
-        for (const line of lines) {
+        let currentKey = null;
+        let currentList = null;
+        
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
             const trimmed = line.trim();
+            
             if (!trimmed || trimmed.startsWith('#')) continue;
+            
+            // Check for list item
+            if (trimmed.startsWith('- ')) {
+                if (currentList) {
+                    const listItem = trimmed.slice(2).trim();
+                    // Check if it's a nested object (e.g., "- image: path")
+                    if (listItem.includes(':')) {
+                        const colonIdx = listItem.indexOf(':');
+                        const subKey = listItem.slice(0, colonIdx).trim();
+                        let subValue = listItem.slice(colonIdx + 1).trim();
+                        if ((subValue.startsWith('"') && subValue.endsWith('"')) || (subValue.startsWith("'") && subValue.endsWith("'"))) {
+                            subValue = subValue.slice(1, -1);
+                        }
+                        currentList.push({ [subKey]: subValue });
+                    } else {
+                        currentList.push(listItem);
+                    }
+                }
+                continue;
+            }
+            
+            // Check for key: value
             const idx = trimmed.indexOf(':');
             if (idx === -1) continue;
+            
             const key = trimmed.slice(0, idx).trim();
             let value = trimmed.slice(idx + 1).trim();
+            
+            // If value is empty, this might be a list
+            if (!value) {
+                currentKey = key;
+                currentList = [];
+                obj[key] = currentList;
+                continue;
+            }
+            
+            // Regular key-value
+            currentKey = null;
+            currentList = null;
+            
             if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
                 value = value.slice(1, -1);
             }
             if (value === 'true') value = true;
             else if (value === 'false') value = false;
+            
             obj[key] = value;
         }
         return obj;
