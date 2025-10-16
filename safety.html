@@ -80,7 +80,7 @@
     <!-- Hero Section -->
     <section class="page-hero">
         <div class="hero-video-background">
-            <video class="hero-video" autoplay muted loop playsinline>
+            <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
                 <source id="heroVideoSource" src="" type="video/mp4">
             </video>
             <div class="hero-video-overlay"></div>
@@ -243,5 +243,6 @@
 
     <script src="script.js"></script>
     <script src="js/cms-loader.js"></script>
+    <script src="js/safari-video-fix.js"></script>
 </body>
 </html>
